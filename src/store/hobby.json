@@ -1,0 +1,20 @@
+[
+	{
+		"title": "Хоккей", 
+		"src": "assets/img/Hobby/Hockey/1.jpg", 
+		"link": "Hobby/Hockey",
+		"count": 4
+	},
+	{
+		"title": "Дайвинг", 
+		"src": "assets/img/Hobby/Diving/6.jpg", 
+		"link": "Hobby/Diving",
+		"count": 7
+	},
+	{
+		"title": "Диснай", 
+		"src": "assets/img/Hobby/Dysnai/31.jpg", 
+		"link": "Hobby/Dysnai",
+		"count": 38
+	}
+]
