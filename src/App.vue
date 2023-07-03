@@ -1,5 +1,5 @@
 <template>
-  <v-app weidth="100vw" overflow-y-auto class="d-flex justify-center">
+  <v-app overflow-y-auto class="d-flex justify-center">
     <Header />
     <v-main>
       <router-view />
@@ -15,7 +15,7 @@
 
 <script>
 import Header from "./components/MyHeader.vue";
-import Footer from "./components/MyHeader.vue";
+import Footer from "./components/MyFooter.vue";
 // import MainPage from './components/MainPage.vue'
 
 export default {
@@ -29,26 +29,28 @@ export default {
 
 <style lang="sass">
 #app 
-  font-family: Avenir, Helvetica, Arial, sans-serif
+  font-family: 'Caveat', sans-serif
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
   text-align: center
   color: #2c3e50
-  max-width: 95vw
 
+.v-container
+  max-width: 100vw !important
 
-.bgcolor
+.header__bgcolor
   background-color: #0f0231
+
 
 nav 
   padding: 30px
 
   a 
     font-weight: bold
-    color: #2c3e50
+    color: light-grey
 
     &.router-link-exact-active 
-      color: #42b983
+      color: yellow
     
   
 
