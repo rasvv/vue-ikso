@@ -1,6 +1,6 @@
 <template>
 	<v-container class="ma-4">
-		<h2 class="main__about-caption">О нас</h2>
+		<h2 class="main__about-caption">{{ getAbout }}</h2>
 		<v-row>
 			<v-col cols="3">
 				<v-row class="ma-4" >
@@ -27,14 +27,16 @@
 			</v-col>
 		</v-row>
 	</v-container>
-
-
-  <div class="about  ma-4">
-		<div class="main__about spacer">
-
-			<div class="main__about-descriotion">
-					
-			</div>
-		</div>	
-  </div>
 </template>
+
+
+<script>
+import { mapState } from "vuex";
+export default {
+  computed: 
+	{
+    // ...mapGetters(["getAbout"]),
+		...mapState(["getAbout"]),
+  }
+};
+</script>
