@@ -1,57 +1,112 @@
 <template>
-			<div class="main__clients spacer">
-				<p><a name="clients"></a></p>
-				<h2>Наши партнеры</h2>
+	<v-container class="ma-4">
+		<h2 class="main__about-caption">{{ title }}</h2>
+		<!-- <h2 class="main__about-caption">{{ partners }}</h2> -->
 				<p>Мы сотрудничаем с ведущими производителями резинотехнических изделий России и некоторых иностранных государств</p>
-					<div class="client">
-						<a href="https://www.yart-main.ru">
-							<div>
-								<img src="../assets/img/clients/Yart.png" alt="logo">
-							</div>
-							<p>Ярославль-резинотехника</p>
-						</a>
-						<a href="https://rubexgroup.ru">
-							<div>
-								<img src="../assets/img/clients/RubEx_1.png" alt="logo">	
-							</div>
-							<p>Холдинг RubEx</p>
-						</a>						
-						<a href="http://svarogrvd.ru/">
-							<div>
-								<img src="../assets/img/clients/svarog1.png" alt="logo">
-							</div>
-							<p>"Сварог"</p>
-						</a>	
-						<a href="https://composit.net">
-							<div>
-								<img src="../assets/img/clients/composit.png" alt="logo">
-							</div>
-							<p>НПО "Композит"</p>
-						</a>	
-						<a href="http://www.ptp64.ru">
-							<div>
-								<img src="../assets/img/clients/ptp64.png" alt="logo">
-							</div>
-							<p>ООО "Промтехпласт"</p>
-						</a>							
-						<a href="http://himteks.himsaransk.ru">
-							<div>
-								<img src="../assets/img/clients/Khimtek.png" alt="logo">
-							</div>
-							<p>Химтекс-РТИ</p>
-						</a>	
-						<a href="http://tadem.ru">
-							<div>
-								<img src="../assets/img/clients/tadem.png" alt="logo">
-							</div>
-							<p>Группа компаний "ТАДЕМ"</p>
-						</a>						
-						<a href="https://somkarlas.com">
-							<div>
-								<img src="../assets/img/clients/somkarlas.png" alt="logo">
-							</div>
-							<p>Somkarlas (Turkey)</p>
-						</a>						
-					</div>
-			</div>
+          <!-- <v-container
+            fluid
+            class="d-flex justify-space-around "
+          >
+            <template >
+              <v-hover
+                v-slot="{ hover }"
+                open-delay="200"
+                v-for="card in partners"
+                :key="card.caption"
+              >		
+                <v-card
+                  :elevation="hover ? 16 : 2"
+                  height="400px"
+                  max-width="300px"
+                  :href="card.site"
+                  :class="{ 'on-hover': hover }"
+                  target="blank"
+                  :title="card.caption"
+                >
+                  <v-card-title title="card.caption" class="text-h5"></v-card-title>
+                  <v-img
+                    :src="require(`@/${card.img}`)"
+                    position="center center"
+                    height="250px"
+                    alt="logo"
+                    class="bg"
+                    contain
+                  >
+                  </v-img>
+                </v-card>
+              </v-hover>
+            </template>
+          </v-container>           -->
+          <v-container>
+    <v-row justify="space-around">
+      <v-col
+        v-for="card in partners"
+        :key="card.caption"
+        cols="12"
+        md="3"
+      >
+        <v-card
+          class="pa-12"
+          color="grey-lighten-3"
+        >
+          <v-card
+            :elevation="card"
+            :title="card.caption"
+            class="mx-auto"
+            :href="card.site"
+            target="blank"
+          >
+          <v-img
+                    :src="require(`@/${card.img}`)"
+                    position="center center"
+                    height="150px"
+                    alt="logo"
+                    class="bg"
+                    contain
+                  >
+                  </v-img>
+        </v-card>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>          
+          <v-hover>
+  <template v-slot:default="{ isHovering, props }">
+    <v-card
+      v-bind="props"
+      :color="isHovering ? 'primary' : undefined"
+      
+      v-for="card in partners" 
+      :key="card.caption"
+    >
+      <v-card-items :title="card.caption" ></v-card-items>
+    </v-card>
+  </template>
+</v-hover>          
+  </v-container>
 </template>
+
+<script>
+import { mapGetters } from "vuex";
+export default {
+	data: () => ({
+		title: '',
+    partners: []
+	}),	
+  computed: 
+	{
+    ...mapGetters(['getPartners']),
+		// ...mapState(["aboutJson"]),
+  },
+	methods: {
+		onGetPartners() {
+			this.title = this.getPartners[0].title
+			// this.partners = this.getPartners[0].partners
+			this.partners = this.getPartners[0].partners
+		}
+	},
+	mounted() {
+		this.onGetPartners()
+	},	
+};
+</script>

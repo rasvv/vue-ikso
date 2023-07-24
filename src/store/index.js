@@ -1,7 +1,7 @@
 import { createStore } from 'vuex'
 
 // import sitesJson from './sites.json'
-// import photosJson from './photos.json'
+import partnersJson from './partners.json'
 // import hobbyJson from './hobby.json'
 // import handmadeJson from './handmade.json'
 // import dysnaiJson from './dysnai2005.json'
@@ -16,7 +16,7 @@ export const store = createStore({
 		photoCurrentPage: [],
 		cols: 'auto',
 		// mySitesJson: sitesJson,
-		// myPhotosJson: photosJson,
+		myPartnerJson: partnersJson,
 		// myHobbyJson: hobbyJson,
 		// myHandmadeJson: handmadeJson,
 		// myDysnaiJson: dysnaiJson,
@@ -68,7 +68,7 @@ export const store = createStore({
 		// getView: state => state.view,
 		// getPhotoCurrentPage: state => state.photoCurrentPage,
 		getAbout: state => state.aboutmeJson,
-		// getAlbum: state => state.album,
+		getPartners: state => state.myPartnerJson,
 		// getAlbumName: state => state.albumName,
 		// getPhotosLinks: state => state.myPhotosJson,
 		// getHobbyLinks: state => state.myHobbyJson,
