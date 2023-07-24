@@ -1,5 +1,4 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import { createStore } from 'vuex'
 
 // import sitesJson from './sites.json'
 // import photosJson from './photos.json'
@@ -8,9 +7,7 @@ import Vuex from 'vuex'
 // import dysnaiJson from './dysnai2005.json'
 import aboutJson from './about.json'
 
-Vue.use(Vuex)
-
-export default new Vuex.Store({
+export const store = createStore({
 	data() {
 
 	},
@@ -23,7 +20,7 @@ export default new Vuex.Store({
 		// myHobbyJson: hobbyJson,
 		// myHandmadeJson: handmadeJson,
 		// myDysnaiJson: dysnaiJson,
-		aboutJson: aboutJson,
+		aboutmeJson: aboutJson,
 		// album: photosJson, //текщий альбом (Фото, Хобби, Сайты)
 		albumName: 'Фотографии',
 		fontsize: 14
@@ -70,7 +67,7 @@ export default new Vuex.Store({
 	getters: {
 		// getView: state => state.view,
 		// getPhotoCurrentPage: state => state.photoCurrentPage,
-		getAbout: state => state.aboutJson,
+		getAbout: state => state.aboutmeJson,
 		// getAlbum: state => state.album,
 		// getAlbumName: state => state.albumName,
 		// getPhotosLinks: state => state.myPhotosJson,

@@ -1,6 +1,6 @@
 <template>
 	<v-container class="ma-4">
-		<h2 class="main__about-caption">{{ getAbout }}</h2>
+		<h2 class="main__about-caption">{{ title }}</h2>
 		<v-row>
 			<v-col cols="3">
 				<v-row class="ma-4" >
@@ -31,12 +31,23 @@
 
 
 <script>
-import { mapState } from "vuex";
+import { mapGetters } from "vuex";
 export default {
+	data: () => ({
+		title: ''
+	}),	
   computed: 
 	{
-    // ...mapGetters(["getAbout"]),
-		...mapState(["getAbout"]),
-  }
+    ...mapGetters(['getAbout']),
+		// ...mapState(["aboutJson"]),
+  },
+	methods: {
+		onGetAbout() {
+			this.title = this.getAbout[0].title
+		}
+	},
+	mounted() {
+		this.onGetAbout()
+	},	
 };
 </script>
