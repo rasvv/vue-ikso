@@ -15,6 +15,8 @@ export const store = createStore({
 		view: 'links', //режим отображения
 		photoCurrentPage: [],
 		cols: 'auto',
+		langs: ['ru', 'en', 'tr'],
+		lang: 'en',
 		// mySitesJson: sitesJson,
 		myPartnerJson: partnersJson,
 		// myHobbyJson: hobbyJson,
@@ -27,8 +29,8 @@ export const store = createStore({
 
 	},
 	mutations: {
-		setView(state, payload) {
-			state.view = payload
+		setLang(state, payload) {
+			state.lang = payload
 		},
 		setPhotoCurrentPage(state, payload) {
 			state.photoCurrentPage = payload
@@ -46,9 +48,9 @@ export const store = createStore({
 		updatePhotoCurrentPage({ commit }, page) {
 			return commit('setPhotoCurrentPage', page)
 		},
-		updateView({ commit }, view) {
-			console.log(view);
-			return commit('setView', view)
+		updateLang({ commit }, lang) {
+			console.log(lang);
+			return commit('setLang', lang)
 		},
 		updateAlbum({ commit }, album) {
 			console.log('updateAlbum ' + album);
@@ -65,7 +67,8 @@ export const store = createStore({
 		// updateLink({ commit }, link)
 	},
 	getters: {
-		// getView: state => state.view,
+		getLang: state => state.lang,
+		getLangs: state => state.langs,
 		// getPhotoCurrentPage: state => state.photoCurrentPage,
 		getAbout: state => state.aboutmeJson,
 		getPartners: state => state.myPartnerJson,

@@ -41,6 +41,9 @@ export default {
 .header__bgcolor
   background-color: #0f0231
 
+.light-color
+  background-color: lightblue
+
 
 nav 
   padding: 30px

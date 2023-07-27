@@ -2,46 +2,45 @@
 	{
 		"title": "Наши партнеры",
 		"partners": [
-
 			{
 				"site": "https://www.yart-main.ru",
-                "img": "assets/img/clients/Yart.png",
-                "caption": "Ярославль-резинотехника"
+				"img": "assets/img/clients/Yart.png",
+				"caption": "Ярославль-резинотехника"
 			},
 			{
 				"site": "https://rubexgroup.ru",
-                "img": "assets/img/clients/RubEx_1.png",
-                "caption": "Холдинг RubEx"
+				"img": "assets/img/clients/RubEx_1.png",
+				"caption": "Холдинг RubEx"
 			},
 			{
 				"site": "http://svarogrvd.ru/",
-                "img": "assets/img/clients/svarog1.png",
-                "caption": "Сварог"
+				"img": "assets/img/clients/svarog1.png",
+				"caption": "Сварог"
 			},
 			{
 				"site": "https://composit.net",
-                "img": "assets/img/clients/composit.png",
-                "caption": "Композит"
+				"img": "assets/img/clients/composit.png",
+				"caption": "Композит"
 			},
 			{
 				"site": "http://www.ptp64.ru",
-                "img": "assets/img/clients/ptp64.png",
-                "caption": "ООО 'Промтехпласт'"
+				"img": "assets/img/clients/ptp64.png",
+				"caption": "ООО 'Промтехпласт'"
 			},
 			{
 				"site": "http://himteks.himsaransk.ru",
-                "img": "assets/img/clients/Khimtek.png",
-                "caption": "Химтекс-РТИ"
+				"img": "assets/img/clients/Khimtek.png",
+				"caption": "Химтекс-РТИ"
 			},
 			{
 				"site": "http://tadem.ru",
-                "img": "assets/img/clients/tadem.png",
-                "caption": "Группа компаний 'ТАДЕМ'"
+				"img": "assets/img/clients/tadem.png",
+				"caption": "Группа компаний 'ТАДЕМ'"
 			},
 			{
 				"site": "https://somkarlas.com",
-                "img": "assets/img/clients/somkarlas.png",
-                "caption": "Somkarlas (Turkey)"
+				"img": "assets/img/clients/somkarlas.png",
+				"caption": "Somkarlas (Turkey)"
 			}
 		]
 	}

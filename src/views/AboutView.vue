@@ -9,11 +9,9 @@
 				<v-row class="ma-4">
 					<v-img contain max-height="200"  :src="require(`../assets/img/Background/2.jpg`)" alt="img"></v-img>
 				</v-row>
-			</v-col>
+			</v-col>	
 			<v-col cols="6">
-				<div class="paragraph">Полиграфическое предприятие <span>«ИКСО»</span> - профессиональная полиграфия высокого качества, быстрые и качественные услуги в сфере печати.</div> <br>
-				<div class="paragraph">Специализация предприятия – маркировка резинотехнических изделий методом вулканизации и нанесение изображений на любые поверхности.</div><br>
-				<div class="paragraph">Ведём активную внешнеэкономическую деятельность с иностранными партнерами.</div><br>
+				<div v-for="descs in desc" :key="descs.text"> {{ descs.text }}</div>
 				<!-- <v-img cover :src="require(`../assets/img/building/1.jpg`)" alt="img"></v-img> -->
 			</v-col>
 			<v-col cols="3">
@@ -34,19 +32,28 @@
 import { mapGetters } from "vuex";
 export default {
 	data: () => ({
-		title: ''
+		title: '',
+		desc: [],
+		lang: ''
+
 	}),	
   computed: 
 	{
-    ...mapGetters(['getAbout']),
-		// ...mapState(["aboutJson"]),
+    ...mapGetters(['getAbout', 'getLang']),
   },
 	methods: {
 		onGetAbout() {
 			this.title = this.getAbout[0].title
+			this.desc = this.getAbout[0].desc.filter(descs => descs.lang == this.lang)[0].texts
+			console.log(this.desc)
+		},
+		onGetLang() {
+			this.lang = this.getLang
+			console.log(this.lang)
 		}
 	},
 	mounted() {
+		this.onGetLang()
 		this.onGetAbout()
 	},	
 };

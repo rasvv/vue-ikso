@@ -7,7 +7,7 @@
           to="/"
           :src="require(`../assets/img/logo.png`)"></v-img>
       </v-col>
-      <v-col cols="10">
+      <v-col cols="8">
       <!--   <v-btn to="/about">О нас</v-btn>
         <v-btn to="/tools">Производство</v-btn>
         <v-btn to="/advantage">Преимущества</v-btn>
@@ -22,26 +22,58 @@
           <router-link to="/clients">Партнеры</router-link>
           <router-link to="/about">О нас</router-link>
         </nav> 
-     </v-col>
+      </v-col>
+      <v-col cols="1" class="d-flex justify-end">
+      </v-col>			
+      <v-col cols="1" class="d-flex justify-end">
+        <v-select
+					v-model="lang"
+          class="light-color"
+          color="yellow"
+          label="Language"
+          :items="langs"
+					@change="onSetLang"
+        ></v-select>
+      </v-col>
 
     </v-row>
   </v-container>
 </template>
 
 <script>
-// import { mapActions, mapGetters } from "vuex";
-// export default {
-//   computed: {
-//     ...mapGetters(["getHobbyLinks", "getHandmadeLinks", "getPhotosLinks"]),
-//   },
-//   methods: {
-//     ...mapActions(["updateAlbum", "updateView"]),
-//     onSetAlbum(album) {
-//       this.updateAlbum(album);
-//       this.updateView("links");
-//     },
-//   },
-// };
+import { mapGetters, mapActions } from "vuex";
+export default {
+	data: () => ({
+		title: '',
+		desc: [],
+		lang: '',
+		langs: []
+
+	}),	
+  computed: 
+	{
+    ...mapGetters(['getLang', 'getLangs']),
+		...mapActions(["updateLang"]),		
+		// ...mapState(["aboutJson"]),
+  },
+	methods: {
+		onGetLang() {
+			this.lang = this.getLang
+			console.log(this.lang)
+		},
+		onGetLangs() {
+			this.langs = this.getLangs
+		},
+		onSetLang() {
+			this.updateLang(this.lang)
+			this.onGetLang()			
+		}
+	},
+	mounted() {
+		this.onGetLang(),
+		this.onGetLangs()
+	},	
+};
 </script>
 
 <style></style>
