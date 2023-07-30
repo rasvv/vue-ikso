@@ -1,6 +1,6 @@
 <template>
 	<v-container class="ma-4">
-		<h2 class="main__about-caption">{{ title }}</h2>
+		<h2 class="main__about-caption">{{ getAbout[0].title }}</h2>
 		<v-row>
 			<v-col cols="3">
 				<v-row class="ma-4" >
@@ -11,7 +11,7 @@
 				</v-row>
 			</v-col>	
 			<v-col cols="6">
-				<div v-for="descs in desc" :key="descs.text"> {{ descs.text }}</div>
+				<div v-for="descs in this.getAbout[0].desc.filter(descs => descs.lang == this.getLang)[0].texts" :key="descs.text"> {{ descs.text }}</div>
 				<!-- <v-img cover :src="require(`../assets/img/building/1.jpg`)" alt="img"></v-img> -->
 			</v-col>
 			<v-col cols="3">
@@ -34,27 +34,21 @@ export default {
 	data: () => ({
 		title: '',
 		desc: [],
-		lang: ''
-
 	}),	
   computed: 
 	{
     ...mapGetters(['getAbout', 'getLang']),
   },
-	methods: {
-		onGetAbout() {
-			this.title = this.getAbout[0].title
-			this.desc = this.getAbout[0].desc.filter(descs => descs.lang == this.lang)[0].texts
-			console.log(this.desc)
-		},
-		onGetLang() {
-			this.lang = this.getLang
-			console.log(this.lang)
-		}
-	},
-	mounted() {
-		this.onGetLang()
-		this.onGetAbout()
-	},	
+// 	methods: {
+// 		onGetAbout() {
+// 			this.title = this.getAbout[0].title
+// 			this.desc = this.getAbout[0].desc.filter(descs => descs.lang == this.getLang)[0].texts
+// 			console.log(this.desc)
+// 		}
+// 	},
+// 	mounted() {
+// 		// this.onGetLang()
+// 		// this.onGetAbout()
+// 	},	
 };
 </script>

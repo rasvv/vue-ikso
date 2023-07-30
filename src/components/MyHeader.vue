@@ -1,5 +1,6 @@
 <template>
-  <v-container class="header__bgcolor">
+  <!-- <v-container class="header__bgcolor"> -->
+  <v-container>
     <v-row class="d-flex align-center">
       <v-col cols="2">
         <v-img   :width="100"
@@ -8,14 +9,7 @@
           :src="require(`../assets/img/logo.png`)"></v-img>
       </v-col>
       <v-col cols="8">
-      <!--   <v-btn to="/about">О нас</v-btn>
-        <v-btn to="/tools">Производство</v-btn>
-        <v-btn to="/advantage">Преимущества</v-btn>
-        <v-btn to="/productions">Продукция</v-btn>
-        <v-btn to="/clients">Партнеры</v-btn>
-        <v-btn to="/photos">Контакты</v-btn> -->
         <nav class="d-flex justify-space-between">
-          <!-- <router-link to="/">Home</router-link> | -->
           <router-link to="/tools">Производство</router-link>
           <router-link to="/advantage">Преимущества</router-link>
           <router-link to="/productions">Продукция</router-link>
@@ -26,14 +20,27 @@
       <v-col cols="1" class="d-flex justify-end">
       </v-col>			
       <v-col cols="1" class="d-flex justify-end">
-        <v-select
+        <!-- <v-select
 					v-model="lang"
           class="light-color"
           color="yellow"
           label="Language"
           :items="langs"
-					@change="onSetLang"
-        ></v-select>
+          single-line
+          return-object
+          persistent-hint
+					@change="(selection) => onSetLang(selection)"
+        ></v-select> -->
+        <v-radio-group v-model="lang" column>
+          <v-radio
+            v-for="lang in langs"
+            :key="lang"
+            :label="lang"
+            :value="lang"
+            @change="onSetLang(lang)"
+            
+          ></v-radio>
+        </v-radio-group>        
       </v-col>
 
     </v-row>
@@ -53,22 +60,29 @@ export default {
   computed: 
 	{
     ...mapGetters(['getLang', 'getLangs']),
-		...mapActions(["updateLang"]),		
+		...mapActions(["setLang"]),		
 		// ...mapState(["aboutJson"]),
   },
 	methods: {
 		onGetLang() {
 			this.lang = this.getLang
-			console.log(this.lang)
+			console.log('MyHeader.vue onGetLang '+this.lang)
 		},
 		onGetLangs() {
 			this.langs = this.getLangs
 		},
-		onSetLang() {
-			this.updateLang(this.lang)
-			this.onGetLang()			
+		onSetLang(selection) {
+			this.setLang(selection)
+			console.log('MyHeader.vue onSetLang '+selection)
+			// this.onGetLang()			
 		}
 	},
+  // watch: {
+  //   lang (newVal) {
+  //     this.updateLang(newVal)
+  //     console.log('item changed', newVal);
+  //   }
+  // },
 	mounted() {
 		this.onGetLang(),
 		this.onGetLangs()
