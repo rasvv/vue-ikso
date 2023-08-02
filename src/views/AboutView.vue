@@ -38,17 +38,7 @@ export default {
   computed: 
 	{
     ...mapGetters(['getAbout', 'getLang']),
-  },
-// 	methods: {
-// 		onGetAbout() {
-// 			this.title = this.getAbout[0].title
-// 			this.desc = this.getAbout[0].desc.filter(descs => descs.lang == this.getLang)[0].texts
-// 			console.log(this.desc)
-// 		}
-// 	},
-// 	mounted() {
-// 		// this.onGetLang()
-// 		// this.onGetAbout()
-// 	},	
+  }
+
 };
 </script>

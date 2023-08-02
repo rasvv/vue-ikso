@@ -29,7 +29,7 @@ export const store = createStore({
 	},
 	actions: {
 		setLang(ctx, lang) {
-			console.log('index.js setLang '+ this.state.lang)
+			// console.log('index.js setLang '+ lang)
 			ctx.commit('updateLang', lang)
 		}
 

@@ -33,11 +33,11 @@
         ></v-select> -->
         <v-radio-group v-model="lang" column>
           <v-radio
-            v-for="lang in langs"
+            v-for="lang in getLangs"
             :key="lang"
             :label="lang"
             :value="lang"
-            @change="onSetLang(lang)"
+            @change="onSetLang()"
             
           ></v-radio>
         </v-radio-group>        
@@ -48,7 +48,7 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
+import { mapGetters, mapAction } from "vuex";
 export default {
 	data: () => ({
 		title: '',
@@ -58,12 +58,13 @@ export default {
 
 	}),	
   computed: 
-	{
-    ...mapGetters(['getLang', 'getLangs']),
-		...mapActions(["setLang"]),		
+	
+    mapGetters(['getLang', 'getLangs'])
 		// ...mapState(["aboutJson"]),
-  },
-	methods: {
+  ,
+	methods: 
+  {
+		...mapAction(['setLang']),
 		onGetLang() {
 			this.lang = this.getLang
 			console.log('MyHeader.vue onGetLang '+this.lang)
@@ -71,9 +72,9 @@ export default {
 		onGetLangs() {
 			this.langs = this.getLangs
 		},
-		onSetLang(selection) {
-			this.setLang(selection)
-			console.log('MyHeader.vue onSetLang '+selection)
+		onSetLang() {
+			this.setLang(this.lang)
+			console.log('MyHeader.vue onSetLang '+this.lang)
 			// this.onGetLang()			
 		}
 	},
