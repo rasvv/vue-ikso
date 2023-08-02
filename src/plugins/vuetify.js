@@ -4,5 +4,5 @@ import { createVuetify } from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 
 export const vuetify = createVuetify({
-	theme: { defaultTheme: 'light' },
+	// theme: { defaultTheme: 'light' },
 })

@@ -1,6 +1,6 @@
 <template>
   <!-- <v-container class="header__bgcolor"> -->
-  <v-container>
+  <v-container class="header__bgcolor">
     <v-row class="d-flex align-center">
       <v-col cols="2">
         <v-img   :width="100"
@@ -15,32 +15,20 @@
           <router-link to="/productions">Продукция</router-link>
           <router-link to="/clients">Партнеры</router-link>
           <router-link to="/about">О нас</router-link>
-        </nav> 
+          <router-link to="/contacts">Контакты</router-link>
+        </nav>
       </v-col>
       <v-col cols="1" class="d-flex justify-end">
       </v-col>			
-      <v-col cols="1" class="d-flex justify-end">
-        <!-- <v-select
+      <v-col cols="1" >
+				<v-select
 					v-model="lang"
-          class="light-color"
-          color="yellow"
-          label="Language"
-          :items="langs"
-          single-line
-          return-object
-          persistent-hint
-					@change="(selection) => onSetLang(selection)"
-        ></v-select> -->
-        <v-radio-group v-model="lang" column>
-          <v-radio
-            v-for="lang in getLangs"
-            :key="lang"
-            :label="lang"
-            :value="lang"
-            @change="onSetLang()"
-            
-          ></v-radio>
-        </v-radio-group>        
+					:items="getLangs"
+					label="Language"
+					@update:modelValue="onSetLang()"
+					base-color="yellow"
+					color="yellow"
+				></v-select>				
       </v-col>
 
     </v-row>
@@ -48,14 +36,14 @@
 </template>
 
 <script>
-import { mapGetters, mapAction } from "vuex";
+import { mapGetters, mapActions } from "vuex";
 export default {
 	data: () => ({
 		title: '',
 		desc: [],
 		lang: '',
-		langs: []
-
+		langs: [],
+    selectedColor: 'white',
 	}),	
   computed: 
 	
@@ -64,7 +52,7 @@ export default {
   ,
 	methods: 
   {
-		...mapAction(['setLang']),
+		...mapActions(['setLang']),
 		onGetLang() {
 			this.lang = this.getLang
 			console.log('MyHeader.vue onGetLang '+this.lang)

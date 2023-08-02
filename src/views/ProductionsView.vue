@@ -1,5 +1,5 @@
 <template>
   <div class="production">
-    <h1>This is an production page</h1>
+    <h1>This is a production page</h1>
   </div>
 </template>

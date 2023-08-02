@@ -52,9 +52,19 @@ nav
     font-weight: bold
     color: light-grey
 
-    &.router-link-exact-active 
-      color: yellow
+router-link
+  color: white
+
+.router-link-exact-active 
+  color: yellow
     
-  
+// .v-btn.primary--text 
+//   color: yellow
+
+.v-select__selection,
+.v-select__selection--comma,
+.v-select.v-text-field input 
+  color: yellow !important
+
 
 </style>
