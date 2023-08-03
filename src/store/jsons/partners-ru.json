@@ -1,11 +1,13 @@
 [
 	{
+		"lang": "ru",
 		"title": "Наши партнеры",
+		"text": "",
 		"partners": [
 			{
 				"site": "https://www.yart-main.ru",
 				"img": "assets/img/clients/Yart.png",
-				"caption": "Ярославль-резинотехника"
+				"caption": "Холдинг RubEx"
 			},
 			{
 				"site": "https://rubexgroup.ru",

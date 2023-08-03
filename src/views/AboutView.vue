@@ -1,6 +1,6 @@
 <template>
 	<v-container class="ma-4">
-		<h2 class="main__about-caption">{{ getAbout[0].title }}</h2>
+		<h2 class="main__about-caption">{{ getAboutDesc.title }}</h2>
 		<v-row>
 			<v-col cols="3">
 				<v-row class="ma-4" >
@@ -11,7 +11,7 @@
 				</v-row>
 			</v-col>	
 			<v-col cols="6">
-				<div v-for="descs in this.getAbout[0].desc.filter(descs => descs.lang == this.getLang)[0].texts" :key="descs.text"> {{ descs.text }}</div>
+				<div v-for="desc in this.getAboutDesc.texts" :key="desc.text"> {{ desc.text }} <div></div>  </div>
 				<!-- <v-img cover :src="require(`../assets/img/building/1.jpg`)" alt="img"></v-img> -->
 			</v-col>
 			<v-col cols="3">
@@ -37,7 +37,7 @@ export default {
 	}),	
   computed: 
 	{
-    ...mapGetters(['getAbout', 'getLang']),
+    ...mapGetters(['getAboutDesc']),
   }
 
 };

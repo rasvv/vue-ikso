@@ -1,0 +1,42 @@
+[
+	{
+		"title": "Our partners",
+		"partners": [
+			{
+				"site": "https://rubexgroup.ru",
+				"img": "assets/img/clients/RubEx_1.png",
+				"caption": "Холдинг RubEx"
+			},
+			{
+				"site": "http://svarogrvd.ru/",
+				"img": "assets/img/clients/svarog1.png",
+				"caption": "Сварог"
+			},
+			{
+				"site": "https://composit.net",
+				"img": "assets/img/clients/composit.png",
+				"caption": "Композит"
+			},
+			{
+				"site": "http://www.ptp64.ru",
+				"img": "assets/img/clients/ptp64.png",
+				"caption": "ООО 'Промтехпласт'"
+			},
+			{
+				"site": "http://himteks.himsaransk.ru",
+				"img": "assets/img/clients/Khimtek.png",
+				"caption": "Химтекс-РТИ"
+			},
+			{
+				"site": "http://tadem.ru",
+				"img": "assets/img/clients/tadem.png",
+				"caption": "Группа компаний 'ТАДЕМ'"
+			},
+			{
+				"site": "https://somkarlas.com",
+				"img": "assets/img/clients/somkarlas.png",
+				"caption": "Somkarlas (Turkey)"
+			}
+		]
+	}
+]

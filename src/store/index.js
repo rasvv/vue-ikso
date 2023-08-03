@@ -1,26 +1,24 @@
 import { createStore } from 'vuex'
+import about from './modules/about'
+import partners from './modules/partners'
 
 // import sitesJson from './sites.json'
-import partnersJson from './partners.json'
-import aboutJson from './about.json'
+// import partnersJson from './jsons/partners.json'
+// import aboutJson from './jsons/about.json'
 
 export const store = createStore({
+	modules: {
+		about,
+		partners
+	},
 	data() {
 
 	},
 	state: {
-		// view: 'links', //режим отображения
-		// photoCurrentPage: [],
-		// cols: 'auto',
 		langs: ['ru', 'en', 'tr'],
 		lang: 'en',
-		// mySitesJson: sitesJson,
-		myPartnerJson: partnersJson,
-		aboutmeJson: aboutJson
-		// album: photosJson, //текщий альбом (Фото, Хобби, Сайты)
-		// albumName: 'Фотографии',
-		// fontsize: 14
-
+		// myPartnerJson: partnersJson,
+		// aboutmeJson: aboutJson
 	},
 	mutations: {
 		updateLang(state, payload) {
@@ -29,15 +27,12 @@ export const store = createStore({
 	},
 	actions: {
 		setLang(ctx, lang) {
-			// console.log('index.js setLang '+ lang)
 			ctx.commit('updateLang', lang)
 		}
 
 	},
 	getters: {
 		getLang: state => state.lang,
-		getLangs: state => state.langs,
-		getAbout: state => state.aboutmeJson,
-		getPartners: state => state.myPartnerJson
+		getLangs: state => state.langs
 	}
 })
