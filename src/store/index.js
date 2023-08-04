@@ -1,24 +1,17 @@
 import { createStore } from 'vuex'
-import about from './modules/about'
-import partners from './modules/partners'
 
-// import sitesJson from './sites.json'
-// import partnersJson from './jsons/partners.json'
-// import aboutJson from './jsons/about.json'
+import partnersJson from './jsons/partners.json'
+import aboutJson from './jsons/about.json'
 
 export const store = createStore({
-	modules: {
-		about,
-		partners
-	},
 	data() {
 
 	},
 	state: {
 		langs: ['ru', 'en', 'tr'],
 		lang: 'en',
-		// myPartnerJson: partnersJson,
-		// aboutmeJson: aboutJson
+		partnerJson: partnersJson,
+		aboutJson: aboutJson
 	},
 	mutations: {
 		updateLang(state, payload) {
@@ -33,6 +26,10 @@ export const store = createStore({
 	},
 	getters: {
 		getLang: state => state.lang,
-		getLangs: state => state.langs
+		getLangs: state => state.langs,
+		getAboutDesc: state => state.aboutJson[0].desc.filter(descs => descs.lang == state.lang)[0],
+		getAboutImg: state => state.aboutJson[0].images,
+		getPartners: state => state.partnerJson.filter(descs => descs.lang == state.lang)
+
 	}
 })

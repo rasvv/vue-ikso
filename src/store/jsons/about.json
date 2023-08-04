@@ -47,19 +47,11 @@
 				]
 			}
 		],
-		"images": [
-			{
-				"1": "../assets/img/Background/1.jpg"
-			},
-			{
-				"2": "img/advantage/2.png"
-			},
-			{
-				"3": "img/advantage/3.png"
-			},
-			{
-				"4": "img/advantage/4.png"
-			}
-		]
+		"images": {
+			"1": "assets/img/Background/1.jpg",
+			"2": "img/advantage/2.png",
+			"3": "img/advantage/3.png",
+			"4": "img/advantage/4.png"
+		}
 	}
 ]

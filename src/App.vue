@@ -40,6 +40,7 @@ export default {
 
 .header__bgcolor
   background-color: #0f0231
+  color: #eeeeee
 
 .light-color
   background-color: lightblue

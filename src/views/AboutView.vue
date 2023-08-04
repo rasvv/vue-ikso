@@ -4,10 +4,11 @@
 		<v-row>
 			<v-col cols="3">
 				<v-row class="ma-4" >
-					<v-img contain max-height="200" :src="require(`../assets/img/Background/1.jpg`)" alt="img"> </v-img>
+					<!-- <v-img contain max-height="300" :src="require(`@/${this.getAboutImg[0]}`)" alt="img"> </v-img> -->
+					<div> {{this.getAboutImg[1]}} </div>
 				</v-row>
 				<v-row class="ma-4">
-					<v-img contain max-height="200"  :src="require(`../assets/img/Background/2.jpg`)" alt="img"></v-img>
+					<v-img contain max-height="300"  :src="require(`../assets/img/Background/2.jpg`)" alt="img"></v-img>
 				</v-row>
 			</v-col>	
 			<v-col cols="6">
@@ -16,10 +17,10 @@
 			</v-col>
 			<v-col cols="3">
 				<v-row class="ma-4">
-					<v-img contain max-height="200"  :src="require(`../assets/img/Background/3.jpg`)" alt="img"></v-img>
+					<v-img contain max-height="300"  :src="require(`../assets/img/Background/3.jpg`)" alt="img"></v-img>
 				</v-row>
 				<v-row class="ma-4">
-					<v-img contain max-height="200"  :src="require(`../assets/img/Background/4.jpg`)" alt="img"></v-img>
+					<v-img contain max-height="300"  :src="require(`../assets/img/Background/4.jpg`)" alt="img"></v-img>
 
 				</v-row>
 			</v-col>
@@ -37,7 +38,7 @@ export default {
 	}),	
   computed: 
 	{
-    ...mapGetters(['getAboutDesc']),
+    ...mapGetters(['getAboutDesc', 'getAboutImg']),
   }
 
 };
