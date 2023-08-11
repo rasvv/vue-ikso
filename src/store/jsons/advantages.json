@@ -1,0 +1,110 @@
+[
+	{
+		"id": "1",
+		"img": "assets/img/advantage/1.png",
+		"description": [
+			{
+				"lang": "ru",
+				"desc": "Собственное производство"
+			},
+			{
+				"lang": "en",
+				"caption": "About"
+			},
+			{
+				"lang": "tr",
+				"caption": "Hakkımızda"
+			}
+		]
+	},
+	{
+		"id": "2",
+		"img": "assets/img/advantage/2.png",
+		"description": [
+			{
+				"lang": "ru",
+				"desc": "Четкая организация работы"
+			},
+			{
+				"lang": "en",
+				"caption": "About"
+			},
+			{
+				"lang": "tr",
+				"caption": "Hakkımızda"
+			}
+		]
+	},
+	{
+		"id": "3",
+		"img": "assets/img/advantage/3.png",
+		"description": [
+			{
+				"lang": "ru",
+				"desc": "Слаженность и профессионализм команды"
+			},
+			{
+				"lang": "en",
+				"caption": "About"
+			},
+			{
+				"lang": "tr",
+				"caption": "Hakkımızda"
+			}
+		]
+	},
+	{
+		"id": "4",
+		"img": "assets/img/advantage/4.png",
+		"description": [
+			{
+				"lang": "ru",
+				"desc": "Минимальные сроки выполнения заказов"
+			},
+			{
+				"lang": "en",
+				"caption": "About"
+			},
+			{
+				"lang": "tr",
+				"caption": "Hakkımızda"
+			}
+		]
+	},
+	{
+		"id": "5",
+		"img": "assets/img/advantage/5.png",
+		"description": [
+			{
+				"lang": "ru",
+				"desc": "Полный спектр полиграфических услуг"
+			},
+			{
+				"lang": "en",
+				"caption": "About"
+			},
+			{
+				"lang": "tr",
+				"caption": "Hakkımızda"
+			}
+		]
+	},
+	{
+		"id": "6",
+		"img": "assets/img/advantage/6.png",
+		"description": [
+			{
+				"lang": "ru",
+				"desc": "Индивидуальный подход к каждому клиенту"
+			},
+			{
+				"lang": "en",
+				"caption": "About"
+			},
+			{
+				"lang": "tr",
+				"caption": "Hakkımızda"
+			}
+		]
+	}
+]

@@ -1,0 +1,110 @@
+[
+	{
+		"id": "1",
+		"to": "/about",
+		"captions": [
+			{
+				"lang": "ru",
+				"caption": "О нас"
+			},
+			{
+				"lang": "en",
+				"caption": "About Us"
+			},
+			{
+				"lang": "tr",
+				"caption": "Hakkımızda"
+			}
+		]
+	},
+	{
+		"id": "2",
+		"to": "/tools",
+		"captions": [
+			{
+				"lang": "ru",
+				"caption": "Производство"
+			},
+			{
+				"lang": "en",
+				"caption": "Tools"
+			},
+			{
+				"lang": "tr",
+				"caption": "Üretim"
+			}
+		]
+	},
+	{
+		"id": "3",
+		"to": "/advantage",
+		"captions": [
+			{
+				"lang": "ru",
+				"caption": "Преимущества"
+			},
+			{
+				"lang": "en",
+				"caption": "Advantage"
+			},
+			{
+				"lang": "tr",
+				"caption": "Avantajlar"
+			}
+		]
+	},
+	{
+		"id": "4",
+		"to": "/productions",
+		"captions": [
+			{
+				"lang": "ru",
+				"caption": "Продукция"
+			},
+			{
+				"lang": "en",
+				"caption": "Production"
+			},
+			{
+				"lang": "tr",
+				"caption": "Ürün"
+			}
+		]
+	},
+	{
+		"id": "5",
+		"to": "/clients",
+		"captions": [
+			{
+				"lang": "ru",
+				"caption": "Партнеры"
+			},
+			{
+				"lang": "en",
+				"caption": "Partners"
+			},
+			{
+				"lang": "tr",
+				"caption": "Ortaktakiler"
+			}
+		]
+	},
+	{
+		"id": "6",
+		"to": "/contacts",
+		"captions": [
+			{
+				"lang": "ru",
+				"caption": "Контакты"
+			},
+			{
+				"lang": "en",
+				"caption": "Contacts"
+			},
+			{
+				"lang": "tr",
+				"caption": "Temaslar"
+			}
+		]
+	}
+]

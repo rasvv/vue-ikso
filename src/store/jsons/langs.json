@@ -1,0 +1,26 @@
+[
+    {
+        "lang": "ru",
+        "id": "0",
+        "caption": "Русский",
+        "title": "Язык"
+    },
+    {
+        "lang": "en",
+        "id": "1",
+        "caption": "English",
+        "title": "Language"
+    },
+    {
+        "lang": "tr",
+        "id": "2",
+        "caption": "Türk",
+        "title": "Lisan"
+    },
+    {
+        "lang": "ch",
+        "id": "1",
+        "caption": "中文",
+        "title": "语言"
+    }
+]

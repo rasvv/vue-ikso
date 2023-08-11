@@ -1,35 +1,48 @@
 import { createStore } from 'vuex'
+import langsJson from '@/store/jsons/langs.json'
 
-import partnersJson from './jsons/partners.json'
-import aboutJson from './jsons/about.json'
+import { aboutModule } from '@/store/modules/aboutModule'
+import { toolsModule } from '@/store/modules/toolsModule'
+import { partnersModule } from '@/store/modules/partnersModule'
+import { footerModule } from '@/store/modules/footerModule'
+import { routersModule } from '@/store/modules/routersModule'
 
-export const store = createStore({
-	data() {
+export default createStore({
 
-	},
-	state: {
-		langs: ['ru', 'en', 'tr'],
-		lang: 'en',
-		partnerJson: partnersJson,
-		aboutJson: aboutJson
-	},
+	state: () => ({
+		langs: langsJson,
+		selectLang: {
+			"lang": 'ru',
+			"id": "0",
+			"caption": "Русский",
+			"title": "Язык"
+		},
+		fullVersion: false
+	}),
 	mutations: {
-		updateLang(state, payload) {
-			state.lang = payload
+		updateLang(state, lang) {
+			state.selectLang = state.langs[lang]
+			console.log(state.selectLang);
+		},
+		toggleVersion(state) {
+			state.fullVersion = !state.fullVersion
 		}
 	},
 	actions: {
-		setLang(ctx, lang) {
-			ctx.commit('updateLang', lang)
+		setLang({ state, commit }) {
+			commit('updateLang', state.selectLang)
 		}
-
 	},
 	getters: {
-		getLang: state => state.lang,
+		getLang: state => state.selectLang,
 		getLangs: state => state.langs,
-		getAboutDesc: state => state.aboutJson[0].desc.filter(descs => descs.lang == state.lang)[0],
-		getAboutImg: state => state.aboutJson[0].images,
-		getPartners: state => state.partnerJson.filter(descs => descs.lang == state.lang)
-
+		getVersion: state => state.fullVersion
+	},
+	modules: {
+		about: aboutModule,
+		partners: partnersModule,
+		routers: routersModule,
+		toolsModule: toolsModule,
+		footerModule: footerModule
 	}
 })

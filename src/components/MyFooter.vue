@@ -4,11 +4,11 @@
 			<v-col cols="3"></v-col>
 
 			<v-col cols="6" class="d-flex justify-center">
-				2021 - {{new Date().getFullYear()}}   &copy;   Все права защищены			
+				2021 - {{new Date().getFullYear()}}   &copy;   {{ getFooter[0].title }}			
 			</v-col>
 			<v-col cols="3">
-				Дизайн и вёрстка: 
-				<a href="https://rasvv.github.io/vue-mySite/"><img src="../assets/img/rvv.png" alt="rvv" height="20"></a>
+				{{ getFooter[0].text }}
+				<a href="https://rasvv.github.io/vue-mySite/" target="blank" ><img src="../assets/img/rvv.png" alt="rvv" height="20"></a>
 			</v-col>
 
 			</v-row>
@@ -16,7 +16,15 @@
 </template>
 
 <script>
-
+import { mapGetters } from "vuex";
+export default {
+  computed: {
+    ...mapGetters(["getFooter"])
+  }
+};
 </script>
 
-<style></style>
+<style lang="sass" scoped>
+*
+	font-size: 18px
+</style>

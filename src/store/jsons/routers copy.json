@@ -1,0 +1,101 @@
+[
+	{
+		"lang": "ru",
+		"router": [
+			{
+				"id": "1",
+				"to": "/about",
+				"caption": "О нас"
+			},
+			{
+				"id": "2",
+				"to": "/tools",
+				"caption": "Производство"
+			},
+			{
+				"id": "3",
+				"to": "/advantage",
+				"caption": "Преимущества"
+			},
+			{
+				"id": "4",
+				"to": "/productions",
+				"caption": "Продукция"
+			},
+			{
+				"id": "5",
+				"to": "/clients",
+				"caption": "Партнеры"
+			},
+			{
+				"id": "6",
+				"to": "/contacts",
+				"caption": "Контакты"
+			}
+		]
+	},
+	{
+		"lang": "en",
+		"router": [
+			{
+				"id": "1",
+				"to": "/about",
+				"caption": "About Us"
+			},
+			{
+				"id": "2",
+				"to": "/tools",
+				"caption": "Tools"
+			},
+			{
+				"id": "3",
+				"to": "/advantage",
+				"caption": "Advantage"
+			},
+			{
+				"id": "1",
+				"to": "/productions",
+				"caption": "Productions"
+			},
+			{
+				"id": "1",
+				"to": "/clients",
+				"caption": "Partners"
+			},
+			{
+				"id": "1",
+				"to": "/contacts",
+				"caption": "Contacts"
+			}
+		]
+	},
+	{
+		"lang": "tr",
+		"router": [
+			{
+				"to": "/about",
+				"caption": "Hakkımızda"
+			},
+			{
+				"to": "/tools",
+				"caption": "tr - Производство"
+			},
+			{
+				"to": "/advantage",
+				"caption": "tr - Преимущества"
+			},
+			{
+				"to": "/productions",
+				"caption": "tr - Продукция"
+			},
+			{
+				"to": "/clients",
+				"caption": "tr - Партнеры"
+			},
+			{
+				"to": "/contacts",
+				"caption": "tr - Контакты"
+			}
+		]
+	}
+]

@@ -6,7 +6,7 @@
 				"title": "О нас",
 				"texts": [
 					{
-						"text": "Полиграфическое предприятие <span>«ИКСО»</span> - профессиональная полиграфия высокого качества, быстрые и качественные услуги в сфере печати."
+						"text": "Полиграфическое предприятие «ИКСО» - профессиональная полиграфия высокого качества, быстрые и качественные услуги в сфере печати."
 					},
 					{
 						"text": "Специализация предприятия – маркировка резинотехнических изделий методом вулканизации и нанесение изображений на любые поверхности."
@@ -21,37 +21,37 @@
 				"title": "About Us",
 				"texts": [
 					{
-						"text": "EN - Полиграфическое предприятие <span>«ИКСО»</span> - профессиональная полиграфия высокого качества, быстрые и качественные услуги в сфере печати."
+						"text": "Printing company «IKSO» is a professional printing of high quality, fast and high-quality services in the field of printing."
 					},
 					{
-						"text": "EN - Специализация предприятия – маркировка резинотехнических изделий методом вулканизации и нанесение изображений на любые поверхности."
+						"text": "The company specializes in marking rubber products by vulcanization and applying images to any surface."
 					},
 					{
-						"text": "EN - Ведём активную внешнеэкономическую деятельность с иностранными партнерами."
+						"text": "We conduct active foreign economic activity with foreign partners."
 					}
 				]
 			},
 			{
 				"lang": "tr",
-				"title": "О нас",
+				"title": "Hakkımızda",
 				"texts": [
 					{
-						"text": "TR - Полиграфическое предприятие <span>«ИКСО»</span> - профессиональная полиграфия высокого качества, быстрые и качественные услуги в сфере печати."
+						"text": "Baskı şirketi «ICSO», baskı alanında yüksek kalitede, hızlı ve kaliteli hizmetlerle profesyonel bir basımdır."
 					},
 					{
-						"text": "TR - Специализация предприятия – маркировка резинотехнических изделий методом вулканизации и нанесение изображений на любые поверхности."
+						"text": "İşletmenin uzmanlığı, kauçuk ürünlerinin vulkanizasyon yöntemiyle etiketlenmesi ve herhangi bir yüzeye görüntü uygulanmasıdır."
 					},
 					{
-						"text": "TR - Ведём активную внешнеэкономическую деятельность с иностранными партнерами."
+						"text": "Yabancı ortaklarla aktif dış ekonomik faaliyet yürütüyoruz."
 					}
 				]
 			}
 		],
 		"images": {
 			"1": "assets/img/Background/1.jpg",
-			"2": "img/advantage/2.png",
-			"3": "img/advantage/3.png",
-			"4": "img/advantage/4.png"
+			"2": "assets/img/Background/2.jpg",
+			"3": "assets/img/Background/3.jpg",
+			"4": "assets/img/Background/4.jpg"
 		}
 	}
 ]
