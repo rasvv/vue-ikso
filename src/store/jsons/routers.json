@@ -14,6 +14,10 @@
 			{
 				"lang": "tr",
 				"caption": "Hakkımızda"
+			},
+			{
+				"lang": "ch",
+				"caption": "关于我们"
 			}
 		]
 	},
@@ -32,6 +36,10 @@
 			{
 				"lang": "tr",
 				"caption": "Üretim"
+			},
+			{
+				"lang": "ch",
+				"caption": "关于我们"
 			}
 		]
 	},
@@ -50,6 +58,10 @@
 			{
 				"lang": "tr",
 				"caption": "Avantajlar"
+			},
+			{
+				"lang": "ch",
+				"caption": "关于我们"
 			}
 		]
 	},
@@ -68,6 +80,10 @@
 			{
 				"lang": "tr",
 				"caption": "Ürün"
+			},
+			{
+				"lang": "ch",
+				"caption": "关于我们"
 			}
 		]
 	},
@@ -86,6 +102,10 @@
 			{
 				"lang": "tr",
 				"caption": "Ortaktakiler"
+			},
+			{
+				"lang": "ch",
+				"caption": "关于我们"
 			}
 		]
 	},
@@ -104,6 +124,10 @@
 			{
 				"lang": "tr",
 				"caption": "Temaslar"
+			},
+			{
+				"lang": "ch",
+				"caption": "关于我们"
 			}
 		]
 	}

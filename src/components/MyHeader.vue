@@ -5,9 +5,10 @@
         <div>
           <v-img
             height="50"
+            width="150"
             contain
             to="/"
-            :src="require(`../assets/img/logo.png`)"
+            :src="require(`@/assets/img/logo.png`)"
             @dblclick="toggleVersion"
           ></v-img>          
         </div>

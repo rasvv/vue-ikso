@@ -9,11 +9,15 @@
 			},
 			{
 				"lang": "en",
-				"caption": "About"
+				"desc": "Own production"
 			},
 			{
 				"lang": "tr",
-				"caption": "Hakkımızda"
+				"desc": "Hakkımızda"
+			},
+			{
+				"lang": "ch",
+				"desc": "Hakkımızda"
 			}
 		]
 	},
@@ -27,11 +31,15 @@
 			},
 			{
 				"lang": "en",
-				"caption": "About"
+				"desc": "Clear organization of work"
 			},
 			{
 				"lang": "tr",
-				"caption": "Hakkımızda"
+				"desc": "Hakkımızda"
+			},
+			{
+				"lang": "ch",
+				"desc": "Hakkımızda"
 			}
 		]
 	},
@@ -45,11 +53,15 @@
 			},
 			{
 				"lang": "en",
-				"caption": "About"
+				"desc": "Coherence and professionalism of the team"
 			},
 			{
 				"lang": "tr",
-				"caption": "Hakkımızda"
+				"desc": "Hakkımızda"
+			},
+			{
+				"lang": "ch",
+				"desc": "Hakkımızda"
 			}
 		]
 	},
@@ -63,11 +75,15 @@
 			},
 			{
 				"lang": "en",
-				"caption": "About"
+				"desc": "Minimum deadlines for the execution of orders"
 			},
 			{
 				"lang": "tr",
-				"caption": "Hakkımızda"
+				"desc": "Hakkımızda"
+			},
+			{
+				"lang": "ch",
+				"desc": "Hakkımızda"
 			}
 		]
 	},
@@ -81,11 +97,15 @@
 			},
 			{
 				"lang": "en",
-				"caption": "About"
+				"desc": "Full range of printing services"
 			},
 			{
 				"lang": "tr",
-				"caption": "Hakkımızda"
+				"desc": "Hakkımızda"
+			},
+			{
+				"lang": "ch",
+				"desc": "Hakkımızda"
 			}
 		]
 	},
@@ -99,11 +119,15 @@
 			},
 			{
 				"lang": "en",
-				"caption": "About"
+				"desc": "Individual approach to each client"
 			},
 			{
 				"lang": "tr",
-				"caption": "Hakkımızda"
+				"desc": "Hakkımızda"
+			},
+			{
+				"lang": "ch",
+				"desc": "Hakkımızda"
 			}
 		]
 	}

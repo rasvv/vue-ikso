@@ -20,6 +20,10 @@ export const routersModule = {
 				{
 					"lang": "tr",
 					"caption": "Hakkımızda"
+				},
+				{
+					"lang": "ch",
+					"caption": "关于我们"
 				}
 			]
 		}

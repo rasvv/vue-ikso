@@ -45,6 +45,21 @@
 						"text": "Yabancı ortaklarla aktif dış ekonomik faaliyet yürütüyoruz."
 					}
 				]
+			},
+			{
+				"lang": "ch",
+				"title": "关于我们",
+				"texts": [
+					{
+						"text": "印刷公司 «IKSO» -在印刷领域提供高质量，快速和高质量服务的专业印刷。"
+					},
+					{
+						"text": "该公司专门通过硫化和将图像应用于任何表面来标记橡胶制品。"
+					},
+					{
+						"text": "我们与外国合作伙伴开展积极的对外经济活动。"
+					}
+				]
 			}
 		],
 		"images": {

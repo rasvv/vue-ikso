@@ -4,8 +4,10 @@ import langsJson from '@/store/jsons/langs.json'
 import { aboutModule } from '@/store/modules/aboutModule'
 import { toolsModule } from '@/store/modules/toolsModule'
 import { partnersModule } from '@/store/modules/partnersModule'
+import { contactsModule } from '@/store/modules/contactsModule'
 import { footerModule } from '@/store/modules/footerModule'
 import { routersModule } from '@/store/modules/routersModule'
+import {advantagesModule } from '@/store/modules/advantagesModule'
 
 export default createStore({
 
@@ -42,7 +44,9 @@ export default createStore({
 		about: aboutModule,
 		partners: partnersModule,
 		routers: routersModule,
+		contacts: contactsModule,
 		toolsModule: toolsModule,
-		footerModule: footerModule
+		footerModule: footerModule,
+		advantagesModule: advantagesModule
 	}
 })
