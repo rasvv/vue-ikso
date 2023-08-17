@@ -1,4 +1,4 @@
-import partnersJson from '@/store/jsons/partners.json'
+import partnersJson from '@/assets/jsons/partners.json'
 import store from '@/store'
 
 export const partnersModule = {

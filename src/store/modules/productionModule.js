@@ -1,4 +1,4 @@
-import productionJson from '@/store/jsons/production.json'
+import productionJson from '@/assets/jsons/production.json'
 import store from '@/store'
 
 export const productionModule = {

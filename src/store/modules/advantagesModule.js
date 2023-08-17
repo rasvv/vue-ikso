@@ -1,4 +1,4 @@
-import advantagesJson from '@/store/jsons/advantages.json'
+import advantagesJson from '@/assets/jsons/advantages.json'
 
 export const advantagesModule = {
 

@@ -1,5 +1,5 @@
 import { createStore } from 'vuex'
-import langsJson from '@/store/jsons/langs.json'
+import langsJson from '@/assets/jsons/langs.json'
 
 import { aboutModule } from '@/store/modules/aboutModule'
 import { toolsModule } from '@/store/modules/toolsModule'

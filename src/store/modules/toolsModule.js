@@ -1,4 +1,4 @@
-import toolsJson from '@/store/jsons/tools.json'
+import toolsJson from '@/assets/jsons/tools.json'
 import store from '@/store'
 
 export const toolsModule = {

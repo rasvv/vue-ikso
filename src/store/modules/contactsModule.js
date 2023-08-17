@@ -1,4 +1,4 @@
-import contactsJson from '@/store/jsons/contacts.json'
+import contactsJson from '@/assets/jsons/contacts.json'
 import store from '@/store'
 
 export const contactsModule = {

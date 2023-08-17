@@ -1,4 +1,4 @@
-import footerJson from '@/store/jsons/footer.json'
+import footerJson from '@/assets/jsons/footer.json'
 import store from '@/store'
 
 export const footerModule = {

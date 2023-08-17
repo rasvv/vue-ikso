@@ -1,4 +1,4 @@
-import routersJson from '@/store/jsons/routers.json'
+import routersJson from '@/assets/jsons/routers.json'
 import store from '@/store'
 
 export const routersModule = {

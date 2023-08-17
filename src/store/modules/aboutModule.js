@@ -1,4 +1,4 @@
-import aboutJson from '@/store/jsons/about.json'
+import aboutJson from '@/assets/jsons/about.json'
 import store from '@/store'
 
 export const aboutModule = {
