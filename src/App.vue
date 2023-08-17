@@ -61,7 +61,6 @@ export default {
 html
   overflow-y: auto !important
 
-
 .v-container
   max-width: 100vw !important
 
