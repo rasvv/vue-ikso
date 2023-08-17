@@ -6,7 +6,18 @@
         ><div>{{ getTools.text }}</div></v-col
       >
       <v-col v-show="getVersion" cols="9">
-        <v-carousel height="70vh" hide-delimiters show-arrows>
+        <v-carousel height="70vh" hide-delimiters="">
+          <template v-slot:prev="{ props }">
+            <v-btn variant="elevated" @click="props.onClick">{{
+              getPrev
+            }}</v-btn>
+          </template>
+          <template v-slot:next="{ props }">
+            <v-btn variant="elevated" @click="props.onClick">{{
+              getNext
+            }}</v-btn>
+          </template>
+
           <v-carousel-item
             v-for="(slide, i) in getToolsImg"
             :key="i"
@@ -28,7 +39,13 @@ export default {
     clicked: "slide",
   }),
   computed: {
-    ...mapGetters(["getTools", "getToolsImg", "getVersion"]),
+    ...mapGetters([
+      "getTools",
+      "getToolsImg",
+      "getVersion",
+      "getNext",
+      "getPrev",
+    ]),
   },
   methods: {
     onClick() {
@@ -42,7 +59,7 @@ export default {
     removeClass() {
       console.log(false);
       this.clicked = "slide";
-    }
+    },
   },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <v-app overflow-y-auto class="d-flex justify-center">
+  <v-app class="d-flex justify-center">
     <Header />
     <v-main>
       <h1>{{ getActiveRouter }}</h1>
@@ -34,7 +34,6 @@ export default {
 </script>
 
 <style lang="sass">
-@use './styles/main.scss'
 
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap')
 
@@ -58,6 +57,10 @@ export default {
   text-align: center
   // color: #2c3e50
   font-size: 24px
+
+html
+  overflow-y: auto !important
+
 
 .v-container
   max-width: 100vw !important

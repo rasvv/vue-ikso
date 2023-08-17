@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import '../views/AboutView.vue'
 
 const routes = [
 	{
 		path: '/',
-		name: 'about',
-		component: () => import('../views/AboutView.vue')
+		redirect: '/about'
 	},
 	{
 		path: '/about',
@@ -22,9 +22,9 @@ const routes = [
 		component: () => import('../views/ToolsView.vue')
 	},
 	{
-		path: '/productions',
-		name: 'productions',
-		component: () => import('../views/ProductionsView.vue')
+		path: '/production',
+		name: 'production',
+		component: () => import('../views/ProductionView.vue')
 	},
 	{
 		path: '/contacts',

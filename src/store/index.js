@@ -7,7 +7,8 @@ import { partnersModule } from '@/store/modules/partnersModule'
 import { contactsModule } from '@/store/modules/contactsModule'
 import { footerModule } from '@/store/modules/footerModule'
 import { routersModule } from '@/store/modules/routersModule'
-import {advantagesModule } from '@/store/modules/advantagesModule'
+import { advantagesModule } from '@/store/modules/advantagesModule'
+import { productionModule } from '@/store/modules/productionModule'
 
 export default createStore({
 
@@ -17,7 +18,9 @@ export default createStore({
 			"lang": 'ru',
 			"id": "0",
 			"caption": "Русский",
-			"title": "Язык"
+			"title": "Язык",
+			"nextSlide": "Дальше",
+			"prevSlide": "Назад"
 		},
 		fullVersion: false
 	}),
@@ -38,15 +41,18 @@ export default createStore({
 	getters: {
 		getLang: state => state.selectLang,
 		getLangs: state => state.langs,
-		getVersion: state => state.fullVersion
+		getVersion: state => state.fullVersion,
+		getNext: state => state.selectLang.nextSlide,
+		getPrev: state => state.selectLang.prevSlide,
 	},
 	modules: {
 		about: aboutModule,
 		partners: partnersModule,
 		routers: routersModule,
 		contacts: contactsModule,
-		toolsModule: toolsModule,
-		footerModule: footerModule,
-		advantagesModule: advantagesModule
+		tools: toolsModule,
+		footer: footerModule,
+		advantages: advantagesModule,
+		production: productionModule
 	}
 })

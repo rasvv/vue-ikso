@@ -19,7 +19,7 @@
 			},
 			{
 				"id": "4",
-				"to": "/productions",
+				"to": "/production",
 				"caption": "Продукция"
 			},
 			{
@@ -54,7 +54,7 @@
 			},
 			{
 				"id": "1",
-				"to": "/productions",
+				"to": "/production",
 				"caption": "Productions"
 			},
 			{
@@ -85,7 +85,7 @@
 				"caption": "tr - Преимущества"
 			},
 			{
-				"to": "/productions",
+				"to": "/production",
 				"caption": "tr - Продукция"
 			},
 			{
