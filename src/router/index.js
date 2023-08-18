@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import '../views/AboutView.vue'
 
 const routes = [
 	{
