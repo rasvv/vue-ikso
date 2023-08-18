@@ -15,13 +15,24 @@
         <v-carousel-item
           v-for="(prod, i) in getProduction"
           :key="i"
-          cover
-          
+          contain
+          transition="fade-transition"
         >
           <v-card >
-            <h2 class="my-5">{{ prod.caption }}</h2>
-            <h4 class="mb-10">{{ prod.text }}</h4>
-            <v-img cover height="50vh" :src="require(`@/${prod.img}`)"></v-img>
+            <v-row>
+              <v-col cols="1"></v-col>
+              <v-col cols="7">
+                <v-img cover height="60vh" :src="require(`@/${prod.img}`)"></v-img>
+
+              </v-col>
+              <v-col cols="3" class="d-flex align-center flex-column justify-center">
+                <h2 class="my-5">{{ prod.caption }}</h2>
+                <h4 class="mb-10">{{ prod.text }}</h4>
+              </v-col>
+              <v-col cols="1"></v-col>
+
+            </v-row>
+            
           </v-card>
         </v-carousel-item>
       </v-carousel>

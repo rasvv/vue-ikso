@@ -1,21 +1,21 @@
 <template>
   <v-container class="ma-4">
-    <p>{{ getPartners[0].text }}</p>
-    <v-row justify="space-around" >
+    <h3>{{ getPartners[0].text }}</h3>
+    <v-row justify="space-around" class="mt-4" >
       <v-card
         v-show="getVersion" 
         v-for="card in getPartners[0].partners"
         :key="card.caption"
-        :width="350"
+        :width="400"
         class="ma-4 header__bgcolor"
       >
         <v-card class="pa-6" color="#5C6BC0">
           <v-card
-            :title="card.caption"
             class="ma-1 pa-3"
             :href="card.site"
             target="blank"
           >
+            <h4>{{ card.caption }}</h4>
             <v-img
               :src="require(`@/${card.img}`)"
               position="center center"
