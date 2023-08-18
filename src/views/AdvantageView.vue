@@ -5,15 +5,15 @@
       <v-card
         v-for="card in getAdvantages"
         :key="card.id"
-        :width="300"
-        class="ma-4 header__bgcolor"
+        :width="400"
+        class="ma-4"
       >
-        <v-card class="pa-6" color="#5C6BC0">
+        <v-card class="pa-6" color="#0d28d9">
           <v-card
-            :text="card.description[getLang.id].desc"
             height="250px"
             class="ma-1 pa-3"
           >
+            <h4>{{ card.description[getLang.id].desc }}</h4>
             <v-img
               :src="require(`@/${card.img}`)"
               position="center center"
@@ -39,3 +39,9 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.v-card.text {
+  font-size: 18px}
+
+</style>

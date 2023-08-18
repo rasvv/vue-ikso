@@ -7,7 +7,7 @@
             <a v-for="contact in getContacts" :key="contact.link" :href="`${contact.pre}${contact.link}`" class="pa-2 ma-2">
               <v-btn  class="pa-4 d-flex justify-space-between" width="100%">
                 <v-img :src="require(`@/${contact.img}`)" width="40"></v-img>
-                <div width="60%" class="d-flex justify-end"    >
+                <div width="60%" class="d-flex justify-end text"   >
                   {{contact.link}}
                 </div>
                 
@@ -43,3 +43,8 @@ export default {
   }
 };
 </script>
+
+<style lang="sass" scoped>
+.text
+  font-size: 18px
+</style>
