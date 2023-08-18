@@ -1,6 +1,6 @@
 <template>
   <v-container class="ma-4">
-    <h3>{{ getPartners[0].text }}</h3>
+    <div class="mx-6">{{ getPartners[0].text }}</div>
     <v-row justify="space-around" class="mt-4" >
       <v-card
         v-show="getVersion" 

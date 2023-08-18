@@ -45,13 +45,16 @@ export default {
   -webkit-box-sizing: border-box
   box-sizing: border-box
 
+.v-application
+  color: #0f0231 !important
+
 #app
   // font-family: 'Caveat', sans-serif
   font-family: 'Alegreya', serif
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
   text-align: center
-  color: #0f0231
+  color: #0f0231 !important
   font-size: 24px
 
 html

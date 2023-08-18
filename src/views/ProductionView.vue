@@ -1,7 +1,7 @@
 <template>
   <div class="production">
     <v-row class="pa-7">
-      <h3>{{ getProductionText }}</h3>
+      <div class="mx-6">{{ getProductionText }}</div>
     </v-row>
     
     <v-row class="pa-5 bg">
