@@ -45,7 +45,7 @@ export default {
   -webkit-box-sizing: border-box
   box-sizing: border-box
 
-.v-application
+.h1
   color: #0f0231 !important
 
 #app
