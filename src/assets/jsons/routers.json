@@ -111,6 +111,28 @@
 	},
 	{
 		"id": "6",
+		"to": "/person",
+		"captions": [
+			{
+				"lang": "ru",
+				"caption": "Команда"
+			},
+			{
+				"lang": "en",
+				"caption": "Comand"
+			},
+			{
+				"lang": "tr",
+				"caption": "Temaslar"
+			},
+			{
+				"lang": "ch",
+				"caption": "关于我们"
+			}
+		]
+	},
+	{
+		"id": "7",
 		"to": "/contacts",
 		"captions": [
 			{

@@ -9,6 +9,7 @@ import { footerModule } from '@/store/modules/footerModule'
 import { routersModule } from '@/store/modules/routersModule'
 import { advantagesModule } from '@/store/modules/advantagesModule'
 import { productionModule } from '@/store/modules/productionModule'
+import { personsModule } from '@/store/modules/personsModule'
 
 export default createStore({
 
@@ -53,6 +54,7 @@ export default createStore({
 		tools: toolsModule,
 		footer: footerModule,
 		advantages: advantagesModule,
-		production: productionModule
+		production: productionModule,
+		person: personsModule
 	}
 })
