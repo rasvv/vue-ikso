@@ -40,11 +40,19 @@ import { mapGetters } from "vuex";
 export default {
   computed: {
     ...mapGetters(["getContacts", "getContactAddress", "getContactMap"]),
+
+  },
+  methods: {
+    lowCase(text) {
+      return text.toLowerCase()
+    }    
   }
+
 };
 </script>
 
 <style lang="sass" scoped>
 .text
   font-size: 18px
+  text-transform: lowercase
 </style>
