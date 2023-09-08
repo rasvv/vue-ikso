@@ -1,7 +1,7 @@
 [
 	{
 		"lang": "ru",
-		"title": "Наши преимущества",
+		"title": "Наши партнеры",
 		"text": "Мы сотрудничаем с ведущими производителями резинотехнических изделий России и некоторых иностранных государств.",
 		"partners": [
 			{
@@ -92,6 +92,48 @@
 		"lang": "tr",
 		"title": "Ortaklarımız",
 		"text": "Rusya'nın ve bazı yabancı ülkelerin önde gelen kauçuk ürünleri üreticileriyle işbirliği yapıyoruz.",
+		"partners": [
+			{
+				"site": "https://somkarlas.com",
+				"img": "assets/img/clients/somkarlas.png",
+				"caption": "Somkarlas (Turkey)"
+			},
+			{
+				"site": "https://www.yart-main.ru",
+				"img": "assets/img/clients/Yart.png",
+				"caption": "Холдинг RubEx"
+			},
+			{
+				"site": "https://rubexgroup.ru",
+				"img": "assets/img/clients/RubEx_1.png",
+				"caption": "Холдинг RubEx"
+			},
+			{
+				"site": "http://svarogrvd.ru/",
+				"img": "assets/img/clients/svarog1.png",
+				"caption": "Сварог"
+			},
+			{
+				"site": "http://www.ptp64.ru",
+				"img": "assets/img/clients/ptp64.png",
+				"caption": "ООО 'Промтехпласт'"
+			},
+			{
+				"site": "http://himteks.himsaransk.ru",
+				"img": "assets/img/clients/Khimtek.png",
+				"caption": "Химтекс-РТИ"
+			},
+			{
+				"site": "http://tadem.ru",
+				"img": "assets/img/clients/tadem.png",
+				"caption": "Группа компаний 'ТАДЕМ'"
+			}
+		]
+	},
+	{
+		"lang": "ch",
+		"title": "Китай",
+		"text": "Китай - Rusya'nın ve bazı yabancı ülkelerin önde gelen kauçuk ürünleri üreticileriyle işbirliği yapıyoruz.",
 		"partners": [
 			{
 				"site": "https://somkarlas.com",

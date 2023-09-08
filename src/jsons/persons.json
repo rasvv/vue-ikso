@@ -8,19 +8,77 @@
 				"img": "assets/img/persons/man.jpg",
 				"post": "Генеральный директор",
 				"surname": "Храмцов",
+				"name":"Борис Александрович",
+				"color": "green"
+			},
+			{
+				"img": "assets/img/persons/woman.png",
+				"post": "Главный бухгалтер",
+				"surname": "Храмцова",
+				"name":"Ирина",
+				"color": "#0c28c9"
+			},
+			{
+				"img": "assets/img/persons/man.jpg",
+				"post": "Генералисимус",
+				"surname": "Храмцов",
+				"name":"Артем Борисович",
+				"color": "#aaaaaa"
+			},
+			{
+				"img": "assets/img/persons/man.jpg",
+				"post": "Генеральный директор",
+				"surname": "Храмцов",
 				"name":"Борис Александрович"
 			},
 			{
 				"img": "assets/img/persons/woman.png",
 				"post": "Главный бухгалтер",
 				"surname": "Храмцова",
-				"name":"Ирина"
+				"name":"Ирина",
+				"color": "#0d28d9"
 			},
 			{
 				"img": "assets/img/persons/man.jpg",
 				"post": "Генералисимус",
 				"surname": "Храмцов",
-				"name":"Артем Борисович"
+				"name":"Артем Борисович",
+				"color": "red"
+			},
+			{
+				"img": "assets/img/persons/woman.png",
+				"post": "Главный бухгалтер",
+				"surname": "Храмцова",
+				"name":"Ирина",
+				"color": "#0d28d9"
+			},
+			{
+				"img": "assets/img/persons/man.jpg",
+				"post": "Генералисимус",
+				"surname": "Храмцов",
+				"name":"Артем Борисович",
+				"color": "#0d28d9"
+			},
+			{
+				"img": "assets/img/persons/man.jpg",
+				"post": "Генеральный директор",
+				"surname": "Храмцов",
+				"name":"Борис Александрович",
+				"color": "#0d28d9"
+			},
+			{
+				"img": "assets/img/persons/woman.png",
+				"post": "Главный бухгалтер",
+				"surname": "Храмцова",
+				"name":"Ирина",
+				"color": "#0d28d9"
+			},
+			{
+				"img": "assets/img/persons/man.jpg",
+				"post": "Генералисимус",
+				"surname": "Храмцов",
+				"name":"Артем Борисович",
+				"color": "#0d28d9"
 			}
 		]
 	},

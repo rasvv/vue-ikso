@@ -1,22 +1,29 @@
 <template>
-  <v-container class="ma-4">
+  <v-container class="ma-4" v-if="getAboutDesc">
     <v-row>
       <v-col cols="3">
         <v-row class="ma-4">
-          <v-img class="img" :src="require(`@/${getAboutImg[1]}`)" alt="img">
-          </v-img>
+          <v-img
+						v-if= "getAboutImg"
+            class="img"
+            :src="getAboutImg[1]"
+            alt="img"
+          ></v-img>
+					<!-- {{ aboutImg[1] }} -->
         </v-row>
         <v-row class="ma-4">
           <v-img
+						v-if= "getAboutImg"
             class="img"
-            :src="require(`@/${getAboutImg[2]}`)"
+            :src="getAboutImg[2]"
             alt="img"
           ></v-img>
         </v-row>
       </v-col>
-      <v-col cols="6">
+      <v-col cols="6" class="d-flex flex-column justify-center">
         <div 
-          v-for="desc in getAboutDesc.texts" 
+					v-if="getAboutDesc"
+          v-for="desc in getAboutTexts" 
           :key="desc.text"
           class="mb-10"
         >
@@ -26,15 +33,17 @@
       <v-col cols="3">
         <v-row class="ma-4">
           <v-img
+						v-if= "getAboutImg"
             class="img"
-            :src="require(`@/${getAboutImg[3]}`)"
+            :src="getAboutImg[3]"
             alt="img"
           ></v-img>
         </v-row>
         <v-row class="ma-4">
           <v-img
+						v-if= "getAboutImg"
             class="img"
-            :src="require(`@/${getAboutImg[4]}`)"
+            :src="getAboutImg[4]"
             alt="img"
           ></v-img>
         </v-row>
@@ -45,19 +54,23 @@
 
 
 <script>
-import { mapGetters, mapMutations } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 export default {
-  data: () => ({
-    title: "",
-    desc: [],
-  }),
-  computed: {
-    ...mapGetters(["getAboutDesc", "getAboutImg"]),
-  },
-  methods: {
-    ...mapMutations({}),
-  },
-};
+	data: () => ({
+		title: "",
+		desc: [],
+		sss: null,
+	}),
+	computed: {
+		...mapGetters({
+			getAboutImg: 'getAboutImg',
+			getAboutDesc: 'getAboutDesc',
+		}),
+		getAboutTexts() {
+			return this.getAboutDesc[0].texts
+		}
+	},
+}
 </script>
 
 <style lang="sass" scoped>

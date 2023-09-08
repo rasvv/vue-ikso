@@ -1,10 +1,10 @@
 <template>
-  <v-container class="ma-4">
-    <div class="mx-6">{{ getPartners[0].text }}</div>
+  <v-container class="ma-4" v-if="getPartner">
+    <div class="mx-6">{{ getPartnersText }}</div>
     <v-row justify="space-around" class="mt-4" >
       <v-card
         v-show="getVersion" 
-        v-for="card in getPartners[0].partners"
+        v-for="card in getPartnersPartners"
         :key="card.caption"
         :width="400"
         class="ma-4 header__bgcolor"
@@ -35,8 +35,14 @@
 <script>
 import { mapGetters } from "vuex";
 export default {
-  computed: {
-    ...mapGetters(["getPartners", "getVersion"]),
-  }
+	computed: {
+		...mapGetters(["getPartners", "getPartner", "getVersion"]),
+		getPartnersText() {
+			return this.getPartners[0].text
+		},
+		getPartnersPartners() {
+			return this.getPartners[0].partners
+		}
+	}
 };
 </script>

@@ -1,0 +1,37 @@
+[
+	{
+		"desc": [
+			{
+				"lang": "ru",
+				"title": "Производство",
+				"text": "Технический парк составлен из современного полиграфического оборудования, позволяющего выполнить заказы любой сложности. Имеется возможность работать в круглосуточном режиме."
+			},
+			{
+				"lang": "en",
+				"title": "Production",
+				"text": "The technical park is made up of modern printing equipment that allows you to fulfill orders of any complexity. It is possible to work around the clock."
+			},
+			{
+				"lang": "tr",
+				"title": "Üretim",
+				"text": "Teknik park, herhangi bir karmaşıklığın sırasını yerine getirmenizi sağlayan modern baskı ekipmanlarından oluşur. Günün her saati çalışmak mümkündür."
+			},
+			{
+				"lang": "ch",
+				"title": "Китай",
+				"text": "Китай - Teknik park, herhangi bir karmaşıklığın sırasını yerine getirmenizi sağlayan modern baskı ekipmanlarından oluşur. Günün her saati çalışmak mümkündür."
+			}
+		],
+		"images": {
+			"1": "assets/img/tools/1.jpeg",
+			"2": "assets/img/tools/2.jpeg",
+			"3": "assets/img/tools/3.jpeg",
+			"4": "assets/img/tools/4.jpeg",
+			"5": "assets/img/tools/5.jpeg",
+			"6": "assets/img/tools/6.jpeg",
+			"7": "assets/img/tools/7.jpeg",
+			"8": "assets/img/tools/8.jpeg",
+			"9": "assets/img/tools/9.jpeg"
+		}
+	}
+]

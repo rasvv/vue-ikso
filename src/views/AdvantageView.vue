@@ -32,16 +32,20 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters, mapActions } from "vuex";
 export default {
-  computed: {
-    ...mapGetters(["getAdvantages", "getLang"]),
-  }
+	computed: {
+		...mapGetters({
+			getAdvantages: "getAdvantages",
+			getLang: 'getLang'
+		}),
+	},
+
 };
 </script>
 
 <style lang="scss" scoped>
 .v-card.text {
-  font-size: 18px}
-
+	font-size: 18px
+}
 </style>

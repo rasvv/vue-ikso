@@ -1,0 +1,75 @@
+[
+	{
+		"desc": [
+			{
+				"lang": "ru",
+				"title": "О нас",
+				"texts": [
+					{
+						"text": "Полиграфическое предприятие «ИКСО» - профессиональная полиграфия высокого качества, быстрые и качественные услуги в сфере печати."
+					},
+					{
+						"text": "Специализация предприятия – маркировка резинотехнических изделий методом вулканизации и нанесение изображений на любые поверхности."
+					},
+					{
+						"text": "Осуществляем нанесение изображений на любые поверхности трафаретным способом, а именно: маркировка резинотехнических изделий, изготовление гибких клавиатур, панелей приборов, светофильтров, шильдов, металлических бирок, термотрансферных этикеток, нанесение логотипов на пакеты, детскую одежду, футболки, спецодежду, печать на крое, полное или выборочное УФ-лакирование календарей, плакатов и многое другое."
+					},
+					{
+						"text": "Ведём активную внешнеэкономическую деятельность с иностранными партнерами."
+					}
+				]
+			},
+			{
+				"lang": "en",
+				"title": "About Us",
+				"texts": [
+					{
+						"text": "Printing company «IKSO» is a professional printing of high quality, fast and high-quality services in the field of printing."
+					},
+					{
+						"text": "The company specializes in marking rubber products by vulcanization and applying images to any surface."
+					},
+					{
+						"text": "We conduct active foreign economic activity with foreign partners."
+					}
+				]
+			},
+			{
+				"lang": "tr",
+				"title": "Hakkımızda",
+				"texts": [
+					{
+						"text": "Baskı şirketi «ICSO», baskı alanında yüksek kalitede, hızlı ve kaliteli hizmetlerle profesyonel bir basımdır."
+					},
+					{
+						"text": "İşletmenin uzmanlığı, kauçuk ürünlerinin vulkanizasyon yöntemiyle etiketlenmesi ve herhangi bir yüzeye görüntü uygulanmasıdır."
+					},
+					{
+						"text": "Yabancı ortaklarla aktif dış ekonomik faaliyet yürütüyoruz."
+					}
+				]
+			},
+			{
+				"lang": "ch",
+				"title": "关于我们",
+				"texts": [
+					{
+						"text": "印刷公司 «IKSO» -在印刷领域提供高质量，快速和高质量服务的专业印刷。"
+					},
+					{
+						"text": "该公司专门通过硫化和将图像应用于任何表面来标记橡胶制品。"
+					},
+					{
+						"text": "我们与外国合作伙伴开展积极的对外经济活动。"
+					}
+				]
+			}
+		],
+		"images": {
+			"img1": "img/Background/3.jpg",
+			"img2": "assets/img/Background/2.jpg",
+			"img3": "assets/img/Background/3.jpg",
+			"img4": "assets/img/Background/4.jpg"
+		}
+	}
+]

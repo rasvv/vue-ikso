@@ -1,15 +1,15 @@
 <template>
-  <v-container class="ma-4">
+  <v-container class="ma-4" v-if="getPersonsJson">
     <!-- <div>{{ getAdvantages }}</div> -->
     <h2>{{ getPersonsText }}</h2>
     <v-row justify="space-around" >
       <v-card
-        v-for="card in getPersons"
+        v-for="card in getPersonsItems"
         :key="card.name"
         :width="400"
         class="ma-4"
       >
-        <v-card class="pa-6" color="#0d28d9">
+        <v-card class="pa-6" :color=setColor(card.color)>
           <v-card
             height="550px"
             class="ma-1 pa-3 d-flex flex-column"
@@ -37,14 +37,22 @@
 <script>
 import { mapGetters } from "vuex";
 export default {
-  computed: {
-    ...mapGetters(["getPersonsText", "getPersons"]),
-  }
+	computed: {
+		...mapGetters(["getPersonsText", "getPersons", "getPersonsJson"]),
+		getPersonsItems() {
+			return this.getPersons[0].persons
+		}
+	},
+	methods: {
+		setColor(clr) {
+			return clr ? clr : "#335599"
+		}
+	}
 };
 </script>
 
 <style lang="scss" scoped>
 .v-card.text {
-  font-size: 18px}
-
+	font-size: 18px
+}
 </style>

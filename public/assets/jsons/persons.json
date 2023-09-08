@@ -1,0 +1,160 @@
+[
+	{
+		"lang": "ru",
+		"title": "Наша команда",
+		"text": "Наша команда состоит из единомышленников, горячо радеющих за свое дело.",
+		"persons": [
+			{
+				"img": "assets/img/persons/man.jpg",
+				"post": "Генеральный директор",
+				"surname": "Храмцов",
+				"name":"Борис Александрович",
+				"color": "green"
+			},
+			{
+				"img": "assets/img/persons/woman.png",
+				"post": "Главный бухгалтер",
+				"surname": "Храмцова",
+				"name":"Ирина",
+				"color": "#0c28c9"
+			},
+			{
+				"img": "assets/img/persons/man.jpg",
+				"post": "Генералисимус",
+				"surname": "Храмцов",
+				"name":"Артем Борисович",
+				"color": "#aaaaaa"
+			},
+			{
+				"img": "assets/img/persons/man.jpg",
+				"post": "Генеральный директор",
+				"surname": "Храмцов",
+				"name":"Борис Александрович"
+			},
+			{
+				"img": "assets/img/persons/woman.png",
+				"post": "Главный бухгалтер",
+				"surname": "Храмцова",
+				"name":"Ирина",
+				"color": "#0d28d9"
+			},
+			{
+				"img": "assets/img/persons/man.jpg",
+				"post": "Генералисимус",
+				"surname": "Храмцов",
+				"name":"Артем Борисович",
+				"color": "red"
+			},
+			{
+				"img": "assets/img/persons/woman.png",
+				"post": "Главный бухгалтер",
+				"surname": "Храмцова",
+				"name":"Ирина",
+				"color": "#0d28d9"
+			},
+			{
+				"img": "assets/img/persons/man.jpg",
+				"post": "Генералисимус",
+				"surname": "Храмцов",
+				"name":"Артем Борисович",
+				"color": "#0d28d9"
+			},
+			{
+				"img": "assets/img/persons/man.jpg",
+				"post": "Генеральный директор",
+				"surname": "Храмцов",
+				"name":"Борис Александрович",
+				"color": "#0d28d9"
+			},
+			{
+				"img": "assets/img/persons/woman.png",
+				"post": "Главный бухгалтер",
+				"surname": "Храмцова",
+				"name":"Ирина",
+				"color": "#0d28d9"
+			},
+			{
+				"img": "assets/img/persons/man.jpg",
+				"post": "Генералисимус",
+				"surname": "Храмцов",
+				"name":"Артем Борисович",
+				"color": "#0d28d9"
+			}
+		]
+	},
+	{
+		"lang": "en",
+		"title": "Our partners",
+		"text": "We cooperate with leading manufacturers of rubber products in Russia and some foreign countries.",
+		"persons": [
+			{
+				"img": "assets/img/persons/man.jpg",
+				"post": "Генеральный директор",
+				"surname": "Храмцов",
+				"name":"Борис Александрович"
+			},
+			{
+				"img": "assets/img/persons/woman.png",
+				"post": "Главный бухгалтер",
+				"surname": "Храмцова",
+				"name":"Ирина"
+			},
+			{
+				"img": "assets/img/persons/man.jpg",
+				"post": "Генералисимус",
+				"surname": "Храмцов",
+				"name":"Артем Борисович"
+			}
+		]
+	},
+	{
+		"lang": "tr",
+		"title": "Ortaklarımız",
+		"text": "Rusya'nın ve bazı yabancı ülkelerin önde gelen kauçuk ürünleri üreticileriyle işbirliği yapıyoruz.",
+		"persons": [
+			{
+				"img": "assets/img/persons/man.jpg",
+				"post": "Генеральный директор",
+				"surname": "Храмцов",
+				"name":"Борис Александрович"
+			},
+			{
+				"img": "assets/img/persons/woman.png",
+				"post": "Главный бухгалтер",
+				"surname": "Храмцова",
+				"name":"Ирина"
+			},
+			{
+				"img": "assets/img/persons/man.jpg",
+				"post": "Генералисимус",
+				"surname": "Храмцов",
+				"name":"Артем Борисович"
+			}
+		]
+	},
+	{
+		"lang": "ch",
+		"title": "Китай",
+		"text": "Китай - Rusya'nın ve bazı yabancı ülkelerin önde gelen kauçuk ürünleri üreticileriyle işbirliği yapıyoruz.",
+		"persons": [
+			{
+				"img": "assets/img/persons/man.jpg",
+				"post": "Генеральный директор",
+				"surname": "Храмцов",
+				"name":"Борис Александрович"
+			},
+			{
+				"img": "assets/img/persons/woman.png",
+				"post": "Главный бухгалтер",
+				"surname": "Храмцова",
+				"name":"Ирина"
+			},
+			{
+				"img": "assets/img/persons/man.jpg",
+				"post": "Генералисимус",
+				"surname": "Храмцов",
+				"name":"Артем Борисович"
+			}
+		]
+	}
+]

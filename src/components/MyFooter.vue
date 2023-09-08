@@ -4,10 +4,10 @@
 			<v-col cols="3"></v-col>
 
 			<v-col cols="6" class="d-flex justify-center">
-				2021 - {{new Date().getFullYear()}}   &copy;   {{ getFooter[0].title }}			
+				2021 - {{ new Date().getFullYear() }}   &copy;   {{ getFooterLocal[0].title }}			
 			</v-col>
 			<v-col cols="3">
-				{{ getFooter[0].text }}
+				{{ getFooterLocal[0].text }}
 				<a href="https://rasvv.github.io/vue-mySite/" target="blank" ><img src="../assets/img/rvv.png" alt="rvv" height="20"></a>
 			</v-col>
 
@@ -16,11 +16,15 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters, mapActions } from "vuex";
+// import store from '@/store'
+
 export default {
-  computed: {
-    ...mapGetters(["getFooter"])
-  }
+	computed: {
+		...mapGetters({
+			getFooterLocal: 'getFooterLocal',
+		}),
+	},
 };
 </script>
 

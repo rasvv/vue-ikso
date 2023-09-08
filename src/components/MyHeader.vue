@@ -10,7 +10,7 @@
             to="/"
             :src="require(`@/assets/img/logo.png`)"
             @dblclick="toggleVersion"
-          ></v-img>          
+          ></v-img>
         </div>
 
       </v-col>
@@ -28,9 +28,9 @@
             {{ router.captions[getLang.id].caption }}
           </router-link>
         </nav>
+
       </v-col>
       <v-col cols="2" class="d-flex flex-row-reverse">
-        <!-- <v-btn @click="onToggleVersion">{{getVersion}}</v-btn> -->
         <v-select
           v-model="selLang"
           :items="getLangs"
@@ -42,55 +42,69 @@
           color="yellow"
           class="select"
         ></v-select>
+				<!-- {{ getLang }} -->
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
-import { mapMutations, mapGetters } from "vuex";
+import { mapMutations, mapGetters, mapActions } from "vuex";
 export default {
-  data: () => ({
-    title: "",
-    selLang: {},
-    desc: [],
-    selectedColor: "white",
-    rout: ''
-  }),
-  methods: {
-    ...mapMutations(['updateLang', 'updateActiveRouter', 'toggleVersion']),
-    onGetLang() {
-      this.selLang = this.getLang;
-      this.rout = this.getActiveRouter
-    },
-    onSetLang() {
-      console.log(this.selLang);
-      this.updateLang(this.selLang);
-      this.onGetLang()
-      // this.onSetActiveRouter()
-    },
-    onToggleVersion() {
-      this.toggleVersion()
-    },
-    onSetActiveRouter(router) {
-      console.log(router);
-      this.rout = router.captions[0].caption
-      this.updateActiveRouter(router)
-    },
-    getCaption(cap) {
-      console.log(this.getLang);
-      console.log(cap.filter(desc => desc.lang = this.getLang.lang)[this.getLang.Id].caption);
-      // return "caption"
-      // return cap.filter(desc => desc.lang = this.getLang.lang)[this.getLang.Id].caption
-    }
-  },
-  computed: {
-    ...mapGetters(['getLang', 'getLangs', 'getRouter', 'getVersion'])
+	data: () => ({
+		title: "",
+		selLang: {},
+		desc: [],
+		selectedColor: "white",
+		rout: ''
+	}),
+	methods: {
 
-  },
-  mounted() {
-    this.onGetLang()
-  }
+		...mapMutations({
+			toggleVersion: 'toggleVersion',
+			updateActiveRouter: 'updateActiveRouter',
+			updateLang: 'updateLang'
+		}),
+
+		// async onGetRouter() {
+		// },
+		onGetSelectLang() {
+			this.selLang = this.getLang
+		},
+		onSetLang() {
+			// this.selLang = this.getLang;
+			console.log('this.selLang');
+			console.log(this.selLang);
+			this.updateLang(this.selLang);
+			this.onGetSelectLang()
+			console.log('this.selLang after');
+			console.log(this.selLang);
+			// this.onSetActiveRouter()
+		},
+		onToggleVersion() {
+			this.toggleVersion()
+		},
+		onSetActiveRouter(router) {
+			console.log("router");
+			console.log(router);
+			this.rout = router.captions[0].caption
+			this.updateActiveRouter(router)
+		},
+	},
+	computed: {
+		...mapGetters({
+			getLang: 'getLang',
+			getLangs: 'getLangs',
+			getVersion: 'getVersion',
+			getRouter: 'getRouter',
+			getActiveRouterTitle: "getActiveRouterTitle",
+
+		})
+
+	},
+	mounted() {
+		this.onGetSelectLang()
+	}
 };
 </script>
 

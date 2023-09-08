@@ -1,58 +1,42 @@
 <template>
-  <div class="production">
-    <v-row class="pa-7">
-      <div class="mx-6">{{ getProductionText }}</div>
-    </v-row>
+  <div class="production" v-if="getProductions">
     
     <v-row class="pa-5 bg">
-      <v-carousel height="70vh" class="ma-7 pa-4" hide-delimiters progress="primary">
-        <template v-slot:prev="{ props }">
-          <v-btn variant="elevated" @click="props.onClick">{{getPrev}}</v-btn>
-        </template>
-        <template v-slot:next="{ props }">
-          <v-btn variant="elevated" @click="props.onClick">{{ getNext }}</v-btn>
-        </template>
-        <v-carousel-item
-          v-for="(prod, i) in getProduction"
-          :key="i"
-          contain
-          transition="fade-transition"
-        >
-          <v-card >
-            <v-row>
-              <v-col cols="1"></v-col>
-              <v-col cols="7">
-                <v-img cover height="60vh" :src="require(`@/${prod.img}`)"></v-img>
-
-              </v-col>
-              <v-col cols="3" class="d-flex align-center flex-column justify-center">
-                <h2 class="my-5">{{ prod.caption }}</h2>
-                <h4 class="mb-10">{{ prod.text }}</h4>
-              </v-col>
-              <v-col cols="1"></v-col>
-
-            </v-row>
-            
-          </v-card>
-        </v-carousel-item>
-      </v-carousel>
+			<carusel-view v-if="getProductionProd"/>
     </v-row>
   </div>
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters, mapActions } from "vuex";
+import CaruselView from '@/views/CaruselView.vue'
 export default {
-  data: () => ({
 
-  }),
-  computed: {
-    ...mapGetters(["getProduction", "getProductionText", "getNext", "getPrev"]),
-  },
+	computed: {
+		...mapGetters({
+			getProductions: "getProductions",
+			getProduction: "getProduction",
+			// getProductionProd: "getProductionProd",
+			getIsProd: "getIsProd",
+
+			getNext: "getNext",
+			getPrev: "getPrev"
+		}),
+		getProductionProd() {
+			console.log("this.getProductions");
+			console.log(this.getProductions[0]);
+			return this.getProductions[0].production
+		},
+
+	},
+	components: {
+		CaruselView
+	}
 };
 </script>
 
 <style lang="scss" scoped>
-.bg
- {background-color: #8ddcf0}
+.bg {
+	background-color: #8ddcf0
+}
 </style>

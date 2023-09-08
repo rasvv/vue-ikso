@@ -1,0 +1,131 @@
+[
+	{
+		"lang": "ru",
+		"title": "Контакты",
+		"address": "г. Курск, Лесной проезд, 62",
+		"map": "https://yandex.ru/map-widget/v1/?ll=36.078676%2C51.656969&mode=poi&poi%5Bpoint%5D=36.077462%2C51.657468&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1731445100&z=18.3",
+		"contacts": [
+			{
+				"type": "phone",
+				"img": "assets/img/other/phone1.png",
+				"pre": "tel:",
+				"link": "+7-4712-22-32-32"
+			},
+			{
+				"type": "mobile",
+				"img": "assets/img/other/mobile1.png",
+				"pre": "tel:",
+				"link": "+7-904-526-77-78"
+			},
+			{
+				"type": "mobile",
+				"img": "assets/img/other/mobile1.png",
+				"pre": "tel:",
+				"link": "+7-910-210-97-20"
+			},
+			{
+				"type": "mail",
+				"img": "assets/img/other/mail.png",
+				"pre": "mailto:",
+				"link": "ikso46@mail.ru"
+			}
+		]
+	},
+	{
+		"lang": "en",
+		"title": "Contacts",
+		"address": "city Kursk, Lesnoy proezd, 62",
+		"map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2205.0742638071947!2d36.07476353327452!3d51.65778379552721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412f1c8b29f8d341%3A0x7a2a9bb96300fd81!2z0J7QntCeICLQmNCa0KHQniI!5e0!3m2!1sru!2sru!4v1692082383595!5m2!1sru!2sru",
+		"contacts": [
+			{
+				"type": "phone",
+				"img": "assets/img/other/phone1.png",
+				"pre": "tel:",
+				"link": "+7-4712-22-32-32"
+			},
+			{
+				"type": "mobile",
+				"img": "assets/img/other/mobile1.png",
+				"pre": "tel:",
+				"link": "+7-904-526-77-78"
+			},
+			{
+				"type": "mobile",
+				"img": "assets/img/other/mobile1.png",
+				"pre": "tel:",
+				"link": "+7-910-210-97-20"
+			},
+			{
+				"type": "mail",
+				"img": "assets/img/other/mail.png",
+				"pre": "mailto:",
+				"link": "info@ikso.info"
+			}
+		]
+	},
+	{
+		"lang": "tr",
+		"title": "Contacts",
+		"address": "г. Курск, Лесной проезд, 62",
+		"map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2205.0742638071947!2d36.07476353327452!3d51.65778379552721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412f1c8b29f8d341%3A0x7a2a9bb96300fd81!2z0J7QntCeICLQmNCa0KHQniI!5e0!3m2!1sru!2sru!4v1692082383595!5m2!1sru!2sru",
+		"contacts": [
+			{
+				"type": "phone",
+				"img": "assets/img/other/phone1.png",
+				"pre": "tel:",
+				"link": "+7-4712-22-32-32"
+			},
+			{
+				"type": "mobile",
+				"img": "assets/img/other/mobile1.png",
+				"pre": "tel:",
+				"link": "+7-904-526-77-78"
+			},
+			{
+				"type": "mobile",
+				"img": "assets/img/other/mobile1.png",
+				"pre": "tel:",
+				"link": "+7-910-210-97-20"
+			},
+			{
+				"type": "mail",
+				"img": "assets/img/other/mail.png",
+				"pre": "mailto:",
+				"link": "hab.etiket@gmail.com"
+			}
+		]
+	},
+	{
+		"lang": "ch",
+		"title": "Contacts",
+		"address": "г. Курск, Лесной проезд, 62",
+		"map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2205.0742638071947!2d36.07476353327452!3d51.65778379552721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412f1c8b29f8d341%3A0x7a2a9bb96300fd81!2z0J7QntCeICLQmNCa0KHQniI!5e0!3m2!1sru!2sru!4v1692082383595!5m2!1sru!2sru",
+		"contacts": [
+			{
+				"type": "phone",
+				"img": "assets/img/other/phone1.png",
+				"pre": "tel:",
+				"link": "+7-4712-22-32-32"
+			},
+			{
+				"type": "mobile",
+				"img": "assets/img/other/mobile1.png",
+				"pre": "tel:",
+				"link": "+7-904-526-77-78"
+			},
+			{
+				"type": "mobile",
+				"img": "assets/img/other/mobile1.png",
+				"pre": "tel:",
+				"link": "+7-910-210-97-20"
+			},
+			{
+				"type": "mail",
+				"img": "assets/img/other/mail.png",
+				"pre": "mailto:",
+				"link": "info@ikso.info"
+			}
+		]
+	}
+
+]

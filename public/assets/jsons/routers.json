@@ -1,0 +1,184 @@
+[
+	{
+		"id": "1",
+		"to": "/about",
+		"captions": [
+			{
+				"lang": "ru",
+				"caption": "О нас",
+				"title": "О нас"
+			},
+			{
+				"lang": "en",
+				"caption": "About Us",
+				"title": "About Us"
+			},
+			{
+				"lang": "tr",
+				"caption": "Hakkımızda",
+				"title": "Hakkımızda"
+			},
+			{
+				"lang": "ch",
+				"caption": "关于我们",
+				"title": "关于我们"
+			}
+		]
+	},
+	{
+		"id": "2",
+		"to": "/tools",
+		"captions": [
+			{
+				"lang": "ru",
+				"caption": "Производство",
+				"title": "Наше производство"
+			},
+			{
+				"lang": "en",
+				"caption": "Tools",
+				"title": "Tools"
+			},
+			{
+				"lang": "tr",
+				"caption": "Üretim",
+				"title": "Üretim"
+			},
+			{
+				"lang": "ch",
+				"caption": "关于我们",
+				"title": "关于我们"
+			}
+		]
+	},
+	{
+		"id": "3",
+		"to": "/advantage",
+		"captions": [
+			{
+				"lang": "ru",
+				"caption": "Преимущества",
+				"title": "Наши преимущества"
+			},
+			{
+				"lang": "en",
+				"caption": "Advantage",
+				"title": "Advantage"
+			},
+			{
+				"lang": "tr",
+				"caption": "Avantajlar",
+				"title": "Avantajlar"
+			},
+			{
+				"lang": "ch",
+				"caption": "关于我们",
+				"title": "关于我们"
+			}
+		]
+	},
+	{
+		"id": "4",
+		"to": "/production",
+		"captions": [
+			{
+				"lang": "ru",
+				"caption": "Продукция",
+				"title": "Выпускаемая продукция"
+			},
+			{
+				"lang": "en",
+				"caption": "Production",
+				"title": "Production"
+			},
+			{
+				"lang": "tr",
+				"caption": "Ürün",
+				"title": "Ürün"
+			},
+			{
+				"lang": "ch",
+				"caption": "关于我们",
+				"title": "关于我们"
+			}
+		]
+	},
+	{
+		"id": "5",
+		"to": "/clients",
+		"captions": [
+			{
+				"lang": "ru",
+				"caption": "Партнеры",
+				"title": "Мы сотрудничаем"
+			},
+			{
+				"lang": "en",
+				"caption": "Partners",
+				"title": "Partners"
+			},
+			{
+				"lang": "tr",
+				"caption": "Ortaktakiler",
+				"title": "Ortaktakiler"
+			},
+			{
+				"lang": "ch",
+				"caption": "关于我们",
+				"title": "关于我们"
+			}
+		]
+	},
+	{
+		"id": "6",
+		"to": "/person",
+		"captions": [
+			{
+				"lang": "ru",
+				"caption": "Команда",
+				"title": "Наш коллектив"
+			},
+			{
+				"lang": "en",
+				"caption": "Team",
+				"title": "Team"
+			},
+			{
+				"lang": "tr",
+				"caption": "Temaslar",
+				"title": "Temaslar"
+			},
+			{
+				"lang": "ch",
+				"caption": "关于我们",
+				"title": "关于我们"
+			}
+		]
+	},
+	{
+		"id": "7",
+		"to": "/contacts",
+		"captions": [
+			{
+				"lang": "ru",
+				"caption": "Контакты",
+				"title": "Ищите нас тут"
+			},
+			{
+				"lang": "en",
+				"caption": "Contacts",
+				"title": "Contacts"
+			},
+			{
+				"lang": "tr",
+				"caption": "Temaslar",
+				"title": "Temaslar"
+			},
+			{
+				"lang": "ch",
+				"caption": "关于我们",
+				"title": "关于我们"
+			}
+		]
+	}
+]

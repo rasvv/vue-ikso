@@ -1,0 +1,134 @@
+[
+	{
+		"id": "1",
+		"img": "assets/img/advantage/1.png",
+		"description": [
+			{
+				"lang": "ru",
+				"desc": "Собственное производство+"
+			},
+			{
+				"lang": "en",
+				"desc": "Own production"
+			},
+			{
+				"lang": "tr",
+				"desc": "Hakkımızda"
+			},
+			{
+				"lang": "ch",
+				"desc": "Hakkımızda"
+			}
+		]
+	},
+	{
+		"id": "2",
+		"img": "assets/img/advantage/2.png",
+		"description": [
+			{
+				"lang": "ru",
+				"desc": "Четкая организация работы"
+			},
+			{
+				"lang": "en",
+				"desc": "Clear organization of work"
+			},
+			{
+				"lang": "tr",
+				"desc": "Hakkımızda"
+			},
+			{
+				"lang": "ch",
+				"desc": "Hakkımızda"
+			}
+		]
+	},
+	{
+		"id": "3",
+		"img": "assets/img/advantage/3.png",
+		"description": [
+			{
+				"lang": "ru",
+				"desc": "Слаженность и профессионализм команды"
+			},
+			{
+				"lang": "en",
+				"desc": "Coherence and professionalism of the team"
+			},
+			{
+				"lang": "tr",
+				"desc": "Hakkımızda"
+			},
+			{
+				"lang": "ch",
+				"desc": "Hakkımızda"
+			}
+		]
+	},
+	{
+		"id": "4",
+		"img": "assets/img/advantage/4.png",
+		"description": [
+			{
+				"lang": "ru",
+				"desc": "Минимальные сроки выполнения заказов"
+			},
+			{
+				"lang": "en",
+				"desc": "Minimum deadlines for the execution of orders"
+			},
+			{
+				"lang": "tr",
+				"desc": "Hakkımızda"
+			},
+			{
+				"lang": "ch",
+				"desc": "Hakkımızda"
+			}
+		]
+	},
+	{
+		"id": "5",
+		"img": "assets/img/advantage/5.png",
+		"description": [
+			{
+				"lang": "ru",
+				"desc": "Полный спектр полиграфических услуг"
+			},
+			{
+				"lang": "en",
+				"desc": "Full range of printing services"
+			},
+			{
+				"lang": "tr",
+				"desc": "Hakkımızda"
+			},
+			{
+				"lang": "ch",
+				"desc": "Hakkımızda"
+			}
+		]
+	},
+	{
+		"id": "6",
+		"img": "assets/img/advantage/6.png",
+		"description": [
+			{
+				"lang": "ru",
+				"desc": "Индивидуальный подход к каждому клиенту"
+			},
+			{
+				"lang": "en",
+				"desc": "Individual approach to each client"
+			},
+			{
+				"lang": "tr",
+				"desc": "Hakkımızda"
+			},
+			{
+				"lang": "ch",
+				"desc": "Hakkımızda"
+			}
+		]
+	}
+]

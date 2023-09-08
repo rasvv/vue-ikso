@@ -1,11 +1,13 @@
 <template>
   <v-app class="d-flex justify-center">
-    <Header />
+    <Header v-if="getActiveRouters"/>
     <v-main>
-      <h1>{{ getActiveRouter }}</h1>
-      <router-view />
+      <!-- <h1>{{ getActiveRouterTitle ? getActiveRouterTitle : "Производится загрузка" }}</h1> -->
+      <h1 v-if="getActiveRouters">{{ getActiveRouterText }}</h1>
+		<!-- <h1>Привет</h1> -->
+      <router-view v-if="getActiveRouters"/>
     </v-main>
-    <Footer />
+    <Footer v-if="getFooter"/>
   </v-app>
 
 </template>
@@ -13,30 +15,70 @@
 <script>
 import Header from "./components/MyHeader.vue";
 import Footer from "./components/MyFooter.vue";
-import { mapGetters } from "vuex";
+import { mapGetters, mapMutations, mapActions } from "vuex";
+import store from "./store";
+
 
 // import MainPage from './components/MainPage.vue'
 
 export default {
-  name: "App",
-  components: {
-    Header,
-    Footer,
-  },
-  computed: {
-    ...mapGetters(["getActiveRouter"]),
-  },
+	name: "App",
+	components: {
+		Header,
+		Footer,
+	},
+
+	methods: {
+		...mapMutations({
+			updateLang: 'langs/updateLang',
+			updateActiveRouter: 'routers/updateActiveRouter',
+			toggleVersion: 'langs/toggleVersion'
+		}),
+		...mapActions({
+			fetchAll: 'fetchAll',
+			fetchAbout: 'about/fetchAbout',
+			fetchRouter: 'routers/fetchRouter'
+		}),
+		onGetAllJsons() {
+			this.fetchAll()
+		},
+		getCaption() {
+			while (!this.getActiveRouters)
+				return
+		}
+	},
+	computed: {
+		...mapGetters({
+			getActiveRouterTitle: 'getActiveRouter',
+			getActiveRouters: 'getActiveRouters',
+			getLang: 'getLang',
+			getFooter: 'getFooter'
+		}),
+		getActiveRouterText() {
+			return this.getActiveRouters[this.getLang.id].caption
+
+			// console.log('this.getActiveRouters = ');
+			// console.log(this.getActiveRouters);
+			// console.log('this.getActiveRouter = ');
+			// console.log(this.getActiveRouter);
+			// let id = this.getLang.id
+			// let text = this.getActiveRouters.lenght > 0
+			// 	? this.getActiveRouters[id].caption
+			// 	: "Загрузка продолжается"
+			// console.log(text);
+			// return text
+		}
+	},
+	beforeMount() {
+		this.onGetAllJsons()
+		// this.onGetRouter()
+	},
 };
 </script>
 
 <style lang="sass">
 
-// @import url('https://fonts.googleapis.com/css?family=Muli&display=swap')
-
-// @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap")
-
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
-
 
 
 *
@@ -49,7 +91,6 @@ h1
   color: #0f0231 !important
 
 #app
-  // font-family: 'Caveat', sans-serif
   font-family: 'Alegreya', serif
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
