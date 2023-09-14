@@ -56,6 +56,10 @@ export default {
 			log('this.setActiveRout')
 			this.setActiveRout('/')
 		},
+		onReload() {
+			console.log('onReload');
+			this.$router.push('/')
+		},
 		...mapActions({
 			fetchAll: 'fetchAll'
 		})
@@ -89,7 +93,7 @@ export default {
 		// this.onGetRouter()
 	},
 	mounted() {
-		window.addEventListener('beforeunload', this.$router.push('/'));
+		window.addEventListener('unload', this.onReload);
 
 	}
 };

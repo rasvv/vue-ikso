@@ -23,7 +23,6 @@
             :key="router.id"
             :to="router.to"
             @click="onSetActiveRouter(router)"
-            @update="onSetActiveRouter(router.caption)"
           >
             {{ router.captions[getLang.id].caption }}
           </router-link>
@@ -107,7 +106,7 @@ export default {
 	},
 	mounted() {
 		this.onGetSelectLang()
-		// this.onSetActiveRouter("start")
+		this.onSetActiveRouter("start")
 
 	}
 };
