@@ -107,7 +107,7 @@ export default {
 	},
 	mounted() {
 		this.onGetSelectLang()
-		this.onSetActiveRouter("start")
+		// this.onSetActiveRouter("start")
 
 	}
 };

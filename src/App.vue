@@ -43,9 +43,6 @@ export default {
 		}),
 		onGetAllJsons() {
 
-			this.$route.path = "/about"
-			// if (this.ar == "/") this.ar = "/about"
-			console.log(this.$route.path);
 			// this.updateRout()
 			this.fetchAll()
 		},
@@ -56,7 +53,8 @@ export default {
 			this.setPath(this.jsonPath)
 		},
 		updateRout() {
-			this.setActiveRout(this.ar)
+			log('this.setActiveRout')
+			this.setActiveRout('/')
 		},
 		...mapActions({
 			fetchAll: 'fetchAll'
@@ -90,6 +88,10 @@ export default {
 		this.onGetAllJsons()
 		// this.onGetRouter()
 	},
+	mounted() {
+		window.addEventListener('beforeunload', this.$router.push('/'));
+
+	}
 };
 </script>
 
