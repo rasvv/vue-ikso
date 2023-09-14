@@ -18,9 +18,9 @@
         <nav class="d-flex justify-space-between">
           <router-link 
             class="router"
-            v-for="router in getRouter" 
+            v-for="router in getRouterJson"
             v-model="rout"
-            :key="router.id" 
+            :key="router.id"
             :to="router.to"
             @click="onSetActiveRouter(router)"
             @update="onSetActiveRouter(router.caption)"
@@ -28,7 +28,7 @@
             {{ router.captions[getLang.id].caption }}
           </router-link>
         </nav>
-
+				<!-- {{ getRouterJson }} -->
       </v-col>
       <v-col cols="2" class="d-flex flex-row-reverse">
         <v-select
@@ -49,7 +49,7 @@
 </template>
 
 <script>
-import { mapMutations, mapGetters, mapActions } from "vuex";
+import { mapMutations, mapGetters } from "vuex";
 export default {
 	data: () => ({
 		title: "",
@@ -79,16 +79,16 @@ export default {
 			this.onGetSelectLang()
 			console.log('this.selLang after');
 			console.log(this.selLang);
-			// this.onSetActiveRouter()
 		},
 		onToggleVersion() {
 			this.toggleVersion()
 		},
 		onSetActiveRouter(router) {
-			console.log("router");
-			console.log(router);
-			this.rout = router.captions[0].caption
-			this.updateActiveRouter(router)
+			if (router == "start")
+			{
+				this.$router.push('/')
+			}
+			else this.updateActiveRouter(router)
 		},
 	},
 	computed: {
@@ -96,14 +96,19 @@ export default {
 			getLang: 'getLang',
 			getLangs: 'getLangs',
 			getVersion: 'getVersion',
-			getRouter: 'getRouter',
+			getRouterJson: 'getRouterJson',
 			getActiveRouterTitle: "getActiveRouterTitle",
 
-		})
+		}),
+		getRouterDesc() {
+			// return state.aboutDesc.filter(item => item.lang == store.state.selectLang.lang),
+		}
 
 	},
 	mounted() {
 		this.onGetSelectLang()
+		this.onSetActiveRouter("start")
+
 	}
 };
 </script>

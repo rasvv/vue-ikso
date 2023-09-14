@@ -9,7 +9,7 @@
             :src="getAboutImg[1]"
             alt="img"
           ></v-img>
-					<!-- {{ aboutImg[1] }} -->
+					<!-- {{ aboutImg[1] }} --> 
         </v-row>
         <v-row class="ma-4">
           <v-img
@@ -29,6 +29,7 @@
         >
           {{ desc.text }}
         </div>
+				<!-- {{ getAboutTexts }} -->
       </v-col>
       <v-col cols="3">
         <v-row class="ma-4">
@@ -65,9 +66,10 @@ export default {
 		...mapGetters({
 			getAboutImg: 'getAboutImg',
 			getAboutDesc: 'getAboutDesc',
+			getAboutJson: 'getAboutJson'
 		}),
 		getAboutTexts() {
-			return this.getAboutDesc[0].texts
+			return this.getAboutDesc[0] ? this.getAboutDesc[0].texts : []
 		}
 	},
 }

@@ -66,10 +66,10 @@
 			}
 		],
 		"images": {
-			"img1": "img/Background/3.jpg",
-			"img2": "assets/img/Background/2.jpg",
-			"img3": "assets/img/Background/3.jpg",
-			"img4": "assets/img/Background/4.jpg"
+			"1": "assets/img/Background/1.jpg",
+			"2": "assets/img/Background/2.jpg",
+			"3": "assets/img/Background/3.jpg",
+			"4": "assets/img/Background/4.jpg"
 		}
 	}
 ]

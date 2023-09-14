@@ -2,9 +2,13 @@
   <v-app class="d-flex justify-center">
     <Header v-if="getActiveRouters"/>
     <v-main>
-      <!-- <h1>{{ getActiveRouterTitle ? getActiveRouterTitle : "Производится загрузка" }}</h1> -->
+			<!-- {{ getActiveRouters }}
+			<v-btn @click="getJsonPath">Get</v-btn>
+			<v-text-field label="jsons Path" v-model="jsonPath" @update:model-value="updatePath"></v-text-field>
+			<v-btn @click="onGetAllJsons">Start</v-btn>
+			{{ getFooter }}
+			{{ getLang.id }} -->
       <h1 v-if="getActiveRouters">{{ getActiveRouterText }}</h1>
-		<!-- <h1>Привет</h1> -->
       <router-view v-if="getActiveRouters"/>
     </v-main>
     <Footer v-if="getFooter"/>
@@ -16,13 +20,17 @@
 import Header from "./components/MyHeader.vue";
 import Footer from "./components/MyFooter.vue";
 import { mapGetters, mapMutations, mapActions } from "vuex";
-import store from "./store";
+// import store from "./store";
 
 
 // import MainPage from './components/MainPage.vue'
 
 export default {
 	name: "App",
+	data: () => ({
+		jsonPath: '',
+		ar: 0
+	}),
 	components: {
 		Header,
 		Footer,
@@ -30,32 +38,41 @@ export default {
 
 	methods: {
 		...mapMutations({
-			updateLang: 'langs/updateLang',
-			updateActiveRouter: 'routers/updateActiveRouter',
-			toggleVersion: 'langs/toggleVersion'
-		}),
-		...mapActions({
-			fetchAll: 'fetchAll',
-			fetchAbout: 'about/fetchAbout',
-			fetchRouter: 'routers/fetchRouter'
+			setPath: 'setPath',
+			setActiveRout: 'setActiveRout'
 		}),
 		onGetAllJsons() {
+
+			this.$route.path = "/about"
+			// if (this.ar == "/") this.ar = "/about"
+			console.log(this.$route.path);
+			// this.updateRout()
 			this.fetchAll()
 		},
-		getCaption() {
-			while (!this.getActiveRouters)
-				return
-		}
+		getJsonPath() {
+			this.jsonPath = this.getPath
+		},
+		updatePath() {
+			this.setPath(this.jsonPath)
+		},
+		updateRout() {
+			this.setActiveRout(this.ar)
+		},
+		...mapActions({
+			fetchAll: 'fetchAll'
+		})
 	},
 	computed: {
 		...mapGetters({
 			getActiveRouterTitle: 'getActiveRouter',
 			getActiveRouters: 'getActiveRouters',
 			getLang: 'getLang',
-			getFooter: 'getFooter'
+			getFooter: 'getFooter',
+			getPath: 'getPath',
+			getRouterJson: 'getRouterJson'
 		}),
 		getActiveRouterText() {
-			return this.getActiveRouters[this.getLang.id].caption
+			return this.getActiveRouters ? this.getActiveRouters[this.getLang.id].caption: "Загрузка"
 
 			// console.log('this.getActiveRouters = ');
 			// console.log(this.getActiveRouters);

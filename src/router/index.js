@@ -39,12 +39,17 @@ const routes = [
 		path: '/clients',
 		name: 'clients',
 		component: () => import('../views/PartnersView.vue')
-	}
+	},
+	{ 
+		path: '/:pathMatch(.*)*', 
+		redirect: '/'
+	},
+
 
 ]
 
 const router = createRouter({
-	history: createWebHistory(process.env.BASE_URL),
+	history: createWebHistory(),
 	routes
 })
 

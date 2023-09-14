@@ -1,5 +1,5 @@
 <template>
-  <v-container class="ma-4" v-if="getPartner">
+  <v-container class="ma-4" v-if="getPartners">
     <div class="mx-6">{{ getPartnersText }}</div>
     <v-row justify="space-around" class="mt-4" >
       <v-card
@@ -38,10 +38,11 @@ export default {
 	computed: {
 		...mapGetters(["getPartners", "getPartner", "getVersion"]),
 		getPartnersText() {
-			return this.getPartners[0].text
+			return this.getPartners[0] ? this.getPartners[0].text: "Загрузка"
+			// return this.getPartners[0].text
 		},
 		getPartnersPartners() {
-			return this.getPartners[0].partners
+			return this.getPartners[0]? this.getPartners[0].partners: []
 		}
 	}
 };
