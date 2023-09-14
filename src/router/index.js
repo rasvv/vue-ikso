@@ -40,11 +40,11 @@ const routes = [
 		name: 'clients',
 		component: () => import('../views/PartnersView.vue')
 	},
-	{ 
-		path: '/:pathMatch(.*)*', 
-		redirect: '/'
-	},
-
+	{
+		path: '/:pathMatch(.*)*',
+		name: 'NotFound',
+		component: () => import('../views/NotFound.vue')
+	}
 
 ]
 
