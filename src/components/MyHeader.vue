@@ -83,11 +83,16 @@ export default {
 			this.toggleVersion()
 		},
 		onSetActiveRouter(router) {
+			console.log("MH1 this.$router");
+			console.log(this.$router.currentRoute.value.fullPath);
 			if (router == "start")
 			{
 				this.$router.push('/')
 			}
 			else this.updateActiveRouter(router)
+			console.log("MH2 this.$router");
+			console.log(this.$router.currentRoute.value.fullPath);
+			this.$router.currentRoute.value.fullPath = '/'
 		},
 	},
 	computed: {
@@ -125,10 +130,12 @@ export default {
 
 .select
   max-width: 50%
+  font-size: 18px
 
 .v-input__details
   display: none  !important
-.v-field__append-inner, .v-field__clearable, .v-field__prepend-inner
+
+.v-field__append-inner
   display: none !important
 
 

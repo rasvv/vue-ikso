@@ -1,19 +1,18 @@
 <template>
-  <v-app class="d-flex justify-center">
-    <Header v-if="getActiveRouters"/>
-    <v-main>
+	<v-app class="d-flex justify-center">
+		<Header v-if="getActiveRouters" />
+		<v-main>
 			<!-- {{ getActiveRouters }}
 			<v-btn @click="getJsonPath">Get</v-btn>
 			<v-text-field label="jsons Path" v-model="jsonPath" @update:model-value="updatePath"></v-text-field>
 			<v-btn @click="onGetAllJsons">Start</v-btn>
 			{{ getFooter }}
 			{{ getLang.id }} -->
-      <h1 v-if="getActiveRouters">{{ getActiveRouterText }}</h1>
-      <router-view v-if="getActiveRouters"/>
-    </v-main>
-    <Footer v-if="getFooter"/>
-  </v-app>
-
+			<h1 v-if="getActiveRouters">{{ getActiveRouterText }}</h1>
+			<router-view v-if="getActiveRouters" />
+		</v-main>
+		<Footer v-if="getFooter" />
+	</v-app>
 </template>
 
 <script>
@@ -74,7 +73,7 @@ export default {
 			getRouterJson: 'getRouterJson'
 		}),
 		getActiveRouterText() {
-			return this.getActiveRouters ? this.getActiveRouters[this.getLang.id].caption: "Загрузка"
+			return this.getActiveRouters ? this.getActiveRouters[this.getLang.id].caption : "Загрузка"
 
 			// console.log('this.getActiveRouters = ');
 			// console.log(this.getActiveRouters);
@@ -92,8 +91,10 @@ export default {
 		this.onGetAllJsons()
 		// this.onGetRouter()
 	},
-	mounted() {
-		window.addEventListener('unload', this.onReload);
+	updated() {
+		console.log('onUpdate');
+		this.$router.push('/')
+		// window.addEventListener('unload', this.onReload);
 
 	}
 };
@@ -131,9 +132,6 @@ html
   background-color: #0f0231
   color: #eeeeee
 
-.light-color
-  background-color: lightblue
-
 .v-btn.v-btn--density-default
   height: auto !important
 
@@ -147,4 +145,7 @@ html
 
 .v-input__details
   display: none  !important  
+
+.v-field__append-inner
+  display: none !important  
 </style>

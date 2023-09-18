@@ -33,8 +33,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.bg {
-	background-color: #8ddcf0
-}
-</style>
+
