@@ -8,7 +8,7 @@
 			</v-col>
 			<v-col cols="3">
 				{{ getFooterLocal[0].text }}
-				<a href="https://rasvv.github.io/vue-mySite/" target="blank" ><img src="../assets/img/rvv.png" alt="rvv" height="20"></a>
+				<a href="https://rasvv.ru" target="blank" ><img src="../assets/img/rvv.png" alt="rvv" height="20"></a>
 			</v-col>
 
 			</v-row>

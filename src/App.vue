@@ -92,8 +92,12 @@ export default {
 		// this.onGetRouter()
 	},
 	updated() {
-		console.log('onUpdate');
-		this.$router.push('/')
+		if (Performancenavigation.type === 1) {
+			console.log('onUpdate');
+			this.$router.push('/')
+			console.log('afteeUpdate');
+		}
+
 		// window.addEventListener('unload', this.onReload);
 
 	}

@@ -130,7 +130,7 @@ export default {
 
 .select
   max-width: 50%
-  font-size: 18px
+  font-size: 14px
 
 .v-input__details
   display: none  !important
